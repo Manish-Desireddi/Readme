@@ -19,8 +19,8 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Manish-Desireddi)
 
 <!-- 4. Profile view counter + followers badges -->
-![Profile Views](https://komarev.com/ghpvc/?username=manishdesireddi&label=Profile+Views&color=06b6d4&style=flat-square)
-![GitHub followers](https://img.shields.io/github/followers/manishdesireddi?label=Followers&style=flat-square&color=7c3aed)
+![Profile Views](https://komarev.com/ghpvc/?username=manish-desireddi&label=Profile+Views&color=06b6d4&style=flat-square)
+![GitHub followers](https://img.shields.io/github/followers/manish-desireddi?label=Followers&style=flat-square&color=7c3aed)
 
 </div>
 
@@ -44,11 +44,11 @@ manish = {
 <div align="center">
 
 <img height="175"
-  src="https://github-readme-stats.vercel.app/api?username=manishdesireddi&show_icons=true&theme=dark&bg_color=09090b&border_color=27272a&title_color=06b6d4&icon_color=06b6d4&text_color=a1a1aa&rank_icon=github"
+  src="https://github-readme-stats.vercel.app/api?username=manish-desireddi&show_icons=true&theme=dark&bg_color=09090b&border_color=27272a&title_color=06b6d4&icon_color=06b6d4&text_color=a1a1aa&rank_icon=github"
   alt="GitHub stats"
 />
 <img height="175"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=manishdesireddi&layout=compact&theme=dark&bg_color=09090b&border_color=27272a&title_color=06b6d4&text_color=a1a1aa"
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=manish-desireddi&layout=compact&theme=dark&bg_color=09090b&border_color=27272a&title_color=06b6d4&text_color=a1a1aa"
   alt="Top languages"
 />
 
@@ -58,7 +58,7 @@ manish = {
 <div align="center">
 
 <img
-  src="https://github-readme-streak-stats.herokuapp.com?user=manishdesireddi&theme=dark&background=09090b&border=27272a&ring=06b6d4&fire=a855f7&currStreakLabel=06b6d4&sideLabels=a1a1aa&dates=52525b"
+  src="https://github-readme-streak-stats.herokuapp.com?user=manish-desireddi&theme=dark&background=09090b&border=27272a&ring=06b6d4&fire=a855f7&currStreakLabel=06b6d4&sideLabels=a1a1aa&dates=52525b"
   alt="GitHub streak"
 />
 
@@ -139,7 +139,7 @@ AI-powered PC configurator with Llama-3 recommendation engine, Celery async infe
 <div align="center">
 
 <img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=manishdesireddi&theme=react-dark&bg_color=09090b&color=06b6d4&line=7c3aed&point=06b6d4&area=true&hide_border=true"
+  src="https://github-readme-activity-graph.vercel.app/graph?username=manish-desireddi&theme=react-dark&bg_color=09090b&color=06b6d4&line=7c3aed&point=06b6d4&area=true&hide_border=true"
   alt="GitHub activity graph"
   width="100%"
 />
@@ -152,7 +152,7 @@ AI-powered PC configurator with Llama-3 recommendation engine, Celery async infe
 <div align="center">
 
 <img
-  src="https://raw.githubusercontent.com/manishdesireddi/manishdesireddi/output/github-contribution-grid-snake-dark.svg"
+  src="https://raw.githubusercontent.com/manish-desireddi/manish-desireddi/output/github-contribution-grid-snake-dark.svg"
   alt="Contribution snake animation"
   width="100%"
 />
