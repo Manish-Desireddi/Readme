@@ -1,179 +1,221 @@
-<div align="center">
+<!--
+  ─────────────────────────────────────────────────────────────────────
+  Manish Desireddi · GitHub Profile README
+  A cinematic, original profile — written as a narrative in chapters.
+  Replace USERNAME tokens with the real handle before publishing.
+  ─────────────────────────────────────────────────────────────────────
+-->
 
-<!-- 1. Animated typing SVG — primary identity statement -->
-<img
-  src="https://readme-typing-svg.demolab.com?font=Caveat&weight=700&size=46&duration=3200&pause=900&color=06B6D4&center=true&vCenter=true&width=750&height=75&lines=Hey%2C+I''m+Manish+Desireddi+%F0%9F%91%8B;AI+%26+Automation+Engineer;Fine-tuning+LLMs+%7C+Building+RAG+Systems;Nokia+%7C+KL+University+%7C+Open+to+Roles"
-  alt="Manish Desireddi — AI Engineer typing animation"
-/>
+<!-- ░░ COVER ░░ -->
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:7c3aed,100:c026d3&height=240&section=header&text=Manish%20Desireddi&fontSize=68&fontColor=ffffff&fontAlignY=42&desc=AI%20systems%20%E2%80%94%20built%20to%20last%2C%20trained%20to%20think.&descAlignY=70&descSize=15&animation=fadeIn"
+    />
+    <img
+      src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:7c3aed,100:c026d3&height=240&section=header&text=Manish%20Desireddi&fontSize=68&fontColor=ffffff&fontAlignY=42&desc=AI%20systems%20%E2%80%94%20built%20to%20last%2C%20trained%20to%20think.&descAlignY=70&descSize=15&animation=fadeIn"
+      alt="Manish Desireddi — AI systems, built to last, trained to think."
+      width="100%"
+    />
+  </picture>
+</p>
 
-<!-- 2. Animated gradient wave divider -->
-<img
-  src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=80&section=header&animation=twinkling"
-  alt=""
-  width="100%"
-/>
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=06B6D4&center=true&vCenter=true&width=820&height=48&lines=%24+whoami+%E2%86%92+ai%2Bautomation+engineer;%24+stack+%E2%86%92+LLMs+%C2%B7+RAG+%C2%B7+Airflow+%C2%B7+Distributed+infra;%24+mission+%E2%86%92+make+intelligence+ship%2C+not+just+demo"
+    alt="Animated tagline"
+  />
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/manishdesireddi)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://manishdesireddi.vercel.app)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manishdesireddi@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Manish-Desireddi)
-
-<!-- 4. Profile view counter + followers badges -->
-![Profile Views](https://komarev.com/ghpvc/?username=manish-desireddi&label=Profile+Views&color=06b6d4&style=flat-square)
-![GitHub followers](https://img.shields.io/github/followers/manish-desireddi?label=Followers&style=flat-square&color=7c3aed)
-
-</div>
+<p align="center">
+  <a href="https://github.com/manishdesireddi"><img src="https://komarev.com/ghpvc/?username=manishdesireddi&label=visitors&color=06b6d4&style=flat-square" alt="Profile visits" /></a>
+  <img src="https://img.shields.io/github/followers/manish-desireddi?label=followers&style=flat-square&color=7c3aed&labelColor=09090b" alt="GitHub followers" />
+  <img src="https://img.shields.io/badge/role-AI%20%26%20Automation%20Engineer-06b6d4?style=flat-square&labelColor=09090b" alt="Role" />
+  <img src="https://img.shields.io/badge/status-open%20to%20opportunities-22c55e?style=flat-square&labelColor=09090b" alt="Status" />
+</p>
 
 ---
 
-**AI & Automation Engineer** currently at **Nokia Solutions and Networks** — I design production-grade AI systems from LLM fine-tuning to distributed infrastructure.
+## chapter 00 · origin
 
-```python
-manish = {
-    "role"      : "Automation Engineer @ Nokia Solutions and Networks",
-    "education" : "B.Tech AI & Data Science, KL University (CGPA 8.2)",
-    "focus"     : ["Generative AI", "Agentic Pipelines", "Distributed Infra"],
-    "stack"     : ["Python", "PyTorch", "FastAPI", "Airflow", "React", "Docker"],
-    "open_to"   : ["AI Engineering", "MLOps", "Automation", "Full-Stack AI"],
-}
+I started by breaking things. Then I started fixing them. Somewhere in the middle, I learned to design them so they don't break.
+
+I build **AI systems that survive contact with production** — fine-tuned models, agentic pipelines, and the boring-but-critical infrastructure that lets the interesting stuff run at 3 a.m. without paging anyone.
+
+> ```ts
+> const manish = {
+>   role     : "Automation Engineer Intern @ Nokia Solutions and Networks",
+>   degree   : "B.Tech · AI & Data Science · KL University (CGPA 8.2)",
+>   focus    : ["generative AI", "agentic systems", "distributed automation"],
+>   stack    : ["python", "pytorch", "fastapi", "airflow", "react", "docker"],
+>   currently: "fine-tuning latents that feel like geometry",
+>   open_for : ["AI engineering", "MLOps", "automation", "full-stack AI"],
+> };
+> ```
+
+---
+
+## chapter 01 · what I'm shipping right now
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Generative 3D
+Text → ShapeNet latents.
+LoRA + QLoRA adapters on a tight VRAM budget.
+GAN geometry, FAISS retrieval for context grounding.
+<br/><sup>currently: training latents · checkpoints incoming</sup>
+
+</td>
+<td width="50%" valign="top">
+
+### Local Windows Assistant
+4-bit Mistral-7B-Instruct, on-device.
+Distil-Whisper voice in, RabbitMQ task dispatch out.
+Zero cloud. Zero telemetry. Zero excuses.
+<br/><sup>shipping as a signed `.exe`</sup>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### AI PC Builder
+React + FastAPI + Llama-3 recommendation engine.
+Celery workers, Redis cache, streaming inference.
+A storefront that actually understands components.
+<br/><sup>storefront under assembly</sup>
+
+</td>
+<td width="50%" valign="top">
+
+### Data & Automation @ Nokia
+Apache Airflow DAGs, ESDB ingestion pipelines.
+Grafana SLAs that hurt your feelings when red.
+Boring infrastructure done right.
+<br/><sup>day job · production scale</sup>
+
+</td>
+</tr>
+</table>
+
+---
+
+## chapter 02 · the toolbelt
+
+<table>
+<tr>
+<td valign="top" width="33%">
+
+**Models & ML**
+- PyTorch · HuggingFace
+- LoRA · QLoRA · 4-bit quant
+- Mistral · Llama-3 · Distil-Whisper
+- GANs · Diffusion · FAISS RAG
+
+</td>
+<td valign="top" width="33%">
+
+**Backend & Infra**
+- FastAPI · Celery · RabbitMQ
+- Apache Airflow · ESDB
+- Redis · Docker · Grafana
+- Postgres · async Python
+
+</td>
+<td valign="top" width="33%">
+
+**Frontend & Glue**
+- React · Vite · Tailwind
+- Framer Motion · TypeScript
+- REST · WebSocket · streaming
+- Git · GitHub Actions · Linux
+
+</td>
+</tr>
+</table>
+
+---
+
+## chapter 03 · live readouts
+
+<p align="center">
+  <img
+    height="170"
+    src="https://github-readme-stats.vercel.app/api?username=manishdesireddi&show_icons=true&hide_border=true&theme=transparent&title_color=06b6d4&icon_color=7c3aed&text_color=a1a1aa&rank_icon=github"
+    alt="GitHub stats"
+  />
+  <img
+    height="170"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=manishdesireddi&layout=compact&hide_border=true&theme=transparent&title_color=06b6d4&text_color=a1a1aa&langs_count=8"
+    alt="Top languages"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://streak-stats.demolab.com?user=manish-desireddi&theme=transparent&hide_border=true&ring=06b6d4&fire=c026d3&currStreakLabel=06b6d4&sideLabels=a1a1aa&dates=52525b"
+    alt="GitHub streak"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=manish-desireddi&theme=react-dark&bg_color=00000000&color=06b6d4&line=7c3aed&point=c026d3&area=true&hide_border=true"
+    alt="Contribution graph"
+    width="100%"
+  />
+</p>
+
+---
+
+## chapter 04 · how I think
+
+```text
+1. The model is a hypothesis. The pipeline around it is the proof.
+2. If it doesn't observe itself, it doesn't exist in production.
+3. Local-first beats cloud-first when latency, privacy, or cost is the bottleneck.
+4. Boring infrastructure is a competitive advantage.
+5. Ship the smallest thing that proves the idea — then harden until it bores you.
 ```
 
 ---
 
-<!-- 5. GitHub stats cards -->
-<div align="center">
+## chapter 05 · beyond the terminal
 
-<img height="175"
-  src="https://github-readme-stats.vercel.app/api?username=manish-desireddi&show_icons=true&theme=dark&bg_color=09090b&border_color=27272a&title_color=06b6d4&icon_color=06b6d4&text_color=a1a1aa&rank_icon=github"
-  alt="GitHub stats"
-/>
-<img height="175"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=manish-desireddi&layout=compact&theme=dark&bg_color=09090b&border_color=27272a&title_color=06b6d4&text_color=a1a1aa"
-  alt="Top languages"
-/>
-
-</div>
-
-<!-- 6. GitHub streak stats -->
-<div align="center">
-
-<img
-  src="https://github-readme-streak-stats.herokuapp.com?user=manish-desireddi&theme=dark&background=09090b&border=27272a&ring=06b6d4&fire=a855f7&currStreakLabel=06b6d4&sideLabels=a1a1aa&dates=52525b"
-  alt="GitHub streak"
-/>
-
-</div>
+- **VP, Student Body — KL-SAC.** Led NAAC inspection logistics and campus-wide event ops.
+- **AI/ML research focus.** Distributed inference, local LLM deployment, multi-modal generation.
+- **Quiet hobbies.** Reading systems papers I half-understand, then re-reading them until I do.
 
 ---
 
-## Technical Stack
+## chapter 06 · let's talk
 
-**AI / ML**
+<p align="left">
+  <a href="mailto:manishdesireddi@gmail.com"><img src="https://img.shields.io/badge/email-manishdesireddi%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=09090b" alt="Email" /></a>
+  <a href="https://linkedin.com/in/manish-desireddi"><img src="https://img.shields.io/badge/linkedin-manish-desireddi?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=09090b" alt="LinkedIn" /></a>
+  <a href="https://manishdesireddi.vercel.app"><img src="https://img.shields.io/badge/portfolio-manishdesireddi.vercel.app-06b6d4?style=for-the-badge&logo=vercel&logoColor=white&labelColor=09090b" alt="Portfolio" /></a>
+  <a href="https://github.com/Manish-Desireddi"><img src="https://img.shields.io/badge/github-Manish--Desireddi-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=09090b" alt="GitHub" /></a>
+</p>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![FAISS](https://img.shields.io/badge/FAISS-412991?style=flat-square&logoColor=white)
-
-**Backend & Infra**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-
-**Frontend**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+> Most of my repos are private right now — several may grow into commercial products.
+> If you'd like a walkthrough, architecture notes, or a private demo, just write.
 
 ---
 
-## Current Role
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=4200&pause=1400&color=A1A1AA&center=true&vCenter=true&width=620&lines=keep+building.+keep+training.+keep+shipping.;%2F%2F+end+of+file"
+    alt="Closing animation"
+  />
+</p>
 
-**Automation Engineer · Nokia Solutions and Networks · Aug 2025 – Present**
-
-- Orchestrating production DAGs in **Apache Airflow** for automated data workflows
-- Building and maintaining **ESDB data ingestion pipelines** at scale
-- Designing **Grafana dashboards** for operational visibility and SLA monitoring
-- Improving automation reliability across distributed engineering processes
-
----
-
-## Featured Projects
-
-### Text to 3D Generative AI
-> *LoRA/QLoRA · GANs · ShapeNet · FAISS RAG*
-
-End-to-end text-conditioned 3D asset generation with LoRA fine-tuning, GAN geometry modelling on ShapeNet, and FAISS RAG context injection.
-
-### Windows Personal Assistant
-> *Mistral-7B · 4-bit Quant · Distil-Whisper · RabbitMQ*
-
-Fully local offline assistant — Mistral-7B at 4-bit precision, real-time voice via Distil-Whisper, RabbitMQ task dispatch. Zero cloud, zero latency, complete privacy.
-
-### AI PC Building Platform
-> *React · FastAPI · Llama-3 · Redis · Celery*
-
-AI-powered PC configurator with Llama-3 recommendation engine, Celery async inference, and Redis session management.
-
----
-
-## Education
-
-**B.Tech — Artificial Intelligence & Data Science** · KL University · CGPA **8.2 / 10.0**
-
----
-
-## Leadership
-
-**VP Student Body — KL-SAC** · Led cross-functional student operations, NAAC inspection planning, and large-scale campus event coordination.
-
----
-
-<!-- 7. Activity graph -->
-<div align="center">
-
-<img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=manish-desireddi&theme=react-dark&bg_color=09090b&color=06b6d4&line=7c3aed&point=06b6d4&area=true&hide_border=true"
-  alt="GitHub activity graph"
-  width="100%"
-/>
-
-</div>
-
----
-
-<!-- 8. Contribution snake animation -->
-<div align="center">
-
-<img
-  src="https://raw.githubusercontent.com/manish-desireddi/manish-desireddi/output/github-contribution-grid-snake-dark.svg"
-  alt="Contribution snake animation"
-  width="100%"
-/>
-
-</div>
-
----
-
-<!-- 9. Closing tagline typing SVG -->
-<div align="center">
-
-<img
-  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=4000&pause=1200&color=06B6D4&center=true&vCenter=true&width=550&lines=Open+to+AI+Engineering+%7C+MLOps+%7C+Automation+roles;Let''s+build+something+that+scales."
-  alt="Open to opportunities"
-/>
-
-<!-- 10. Bottom wave divider -->
-<img
-  src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=80&section=footer&animation=twinkling"
-  alt=""
-  width="100%"
-/>
-
-</div>
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:c026d3,50:7c3aed,100:06b6d4&height=120&section=footer&animation=fadeIn"
+    alt=""
+    width="100%"
+  />
+</p>
