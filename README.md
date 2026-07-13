@@ -144,12 +144,12 @@ Boring infrastructure done right.
 <p align="center">
   <img
     height="170"
-    src="https://github-readme-stats.vercel.app/api?username=manishdesireddi&show_icons=true&hide_border=true&theme=transparent&title_color=06b6d4&icon_color=7c3aed&text_color=a1a1aa&rank_icon=github"
+    src="https://github-readme-stats.vercel.app/api?username=manish-desireddi&show_icons=true&hide_border=true&theme=transparent&title_color=06b6d4&icon_color=7c3aed&text_color=a1a1aa&rank_icon=github"
     alt="GitHub stats"
   />
   <img
     height="170"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=manishdesireddi&layout=compact&hide_border=true&theme=transparent&title_color=06b6d4&text_color=a1a1aa&langs_count=8"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=manish-desireddi&layout=compact&hide_border=true&theme=transparent&title_color=06b6d4&text_color=a1a1aa&langs_count=8"
     alt="Top languages"
   />
 </p>
@@ -196,7 +196,7 @@ Boring infrastructure done right.
 <p align="left">
   <a href="mailto:manishdesireddi@gmail.com"><img src="https://img.shields.io/badge/email-manishdesireddi%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=09090b" alt="Email" /></a>
   <a href="https://linkedin.com/in/manish-desireddi"><img src="https://img.shields.io/badge/linkedin-manish-desireddi?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=09090b" alt="LinkedIn" /></a>
-  <a href="https://manishdesireddi.vercel.app"><img src="https://img.shields.io/badge/portfolio-manishdesireddi.vercel.app-06b6d4?style=for-the-badge&logo=vercel&logoColor=white&labelColor=09090b" alt="Portfolio" /></a>
+  <a href="https://manish-desireddi.vercel.app"><img src="https://img.shields.io/badge/portfolio-manish-desireddi.vercel.app-06b6d4?style=for-the-badge&logo=vercel&logoColor=white&labelColor=09090b" alt="Portfolio" /></a>
   <a href="https://github.com/Manish-Desireddi"><img src="https://img.shields.io/badge/github-Manish--Desireddi-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=09090b" alt="GitHub" /></a>
 </p>
 
