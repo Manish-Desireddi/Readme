@@ -23,7 +23,7 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=06B6D4&center=true&vCenter=true&width=820&height=48&lines=%24+whoami+%E2%86%92+ai%2Bautomation+engineer;%24+stack+%E2%86%92+LLMs+%C2%B7+RAG+%C2%B7+Airflow+%C2%B7+Distributed+infra;%24+mission+%E2%86%92+make+intelligence+ship%2C+not+just+demo"
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=06B6D4&center=true&vCenter=true&width=820&height=48&lines=%24+who-am-I?+%E2%86%92+ai%2Bautomation+engineer;%24+stack+%E2%86%92+LLMs+%C2%B7+RAG+%C2%B7+Airflow+%C2%B7+Distributed+infra;%24+mission+%E2%86%92+make+intelligence+ship%2C+not+just+demo"
     alt="Animated tagline"
   />
 </p>
@@ -196,7 +196,7 @@ Boring infrastructure done right.
 <p align="left">
   <a href="mailto:manishdesireddi@gmail.com"><img src="https://img.shields.io/badge/email-manishdesireddi%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=09090b" alt="Email" /></a>
   <a href="https://linkedin.com/in/manish-desireddi"><img src="https://img.shields.io/badge/linkedin-manish-desireddi?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=09090b" alt="LinkedIn" /></a>
-  <a href="https://manish-desireddi.vercel.app"><img src="https://img.shields.io/badge/portfolio-manish-desireddi.vercel.app-06b6d4?style=for-the-badge&logo=vercel&logoColor=white&labelColor=09090b" alt="Portfolio" /></a>
+  <a href="https://manish-desireddi.vercel.app"><img src="https://img.shields.io/badge/portfolio-manish--desireddi.vercel.app-06b6d4?style=for-the-badge&logo=vercel&logoColor=white&labelColor=09090b" alt="Portfolio" /></a>
   <a href="https://github.com/Manish-Desireddi"><img src="https://img.shields.io/badge/github-Manish--Desireddi-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=09090b" alt="GitHub" /></a>
 </p>
 
