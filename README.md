@@ -144,29 +144,37 @@ Boring infrastructure done right.
 <p align="center">
   <img
     height="170"
-    src="https://github-readme-stats.vercel.app/api?username=manish-desireddi&show_icons=true&hide_border=true&theme=transparent&title_color=06b6d4&icon_color=7c3aed&text_color=a1a1aa&rank_icon=github"
+    src="https://github-readme-stats.vercel.app/api?username=Manish-Desireddi&show_icons=true&hide_border=true&theme=transparent&title_color=06b6d4&icon_color=7c3aed&text_color=a1a1aa&rank_icon=github"
     alt="GitHub stats"
   />
   <img
     height="170"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=manish-desireddi&layout=compact&hide_border=true&theme=transparent&title_color=06b6d4&text_color=a1a1aa&langs_count=8"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Manish-Desireddi&layout=compact&hide_border=true&theme=transparent&title_color=06b6d4&text_color=a1a1aa&langs_count=8"
     alt="Top languages"
   />
 </p>
 
 <p align="center">
   <img
-    src="https://streak-stats.demolab.com?user=manish-desireddi&theme=transparent&hide_border=true&ring=06b6d4&fire=c026d3&currStreakLabel=06b6d4&sideLabels=a1a1aa&dates=52525b"
+    src="https://streak-stats.demolab.com?user=Manish-Desireddi&theme=transparent&hide_border=true&ring=06b6d4&fire=c026d3&currStreakLabel=06b6d4&sideLabels=a1a1aa&dates=52525b"
     alt="GitHub streak"
   />
 </p>
 
 <p align="center">
   <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=manish-desireddi&theme=react-dark&bg_color=00000000&color=06b6d4&line=7c3aed&point=c026d3&area=true&hide_border=true"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Manish-Desireddi&theme=react-dark&bg_color=00000000&color=06b6d4&line=7c3aed&point=c026d3&area=true&hide_border=true"
     alt="Contribution graph"
     width="100%"
   />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./light.svg" />
+    <img src="./dark.svg" alt="Profile visual" width="100%" />
+  </picture>
 </p>
 
 ---
