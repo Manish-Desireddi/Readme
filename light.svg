@@ -21,20 +21,10 @@
             <feComposite in="SourceGraphic" in2="blur" operator="over" />
         </filter>
         
-        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.1" />
-        </filter>
-        
         <filter id="noise">
             <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch"/>
             <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.05 0" />
         </filter>
-
-        <clipPath id="typing-clip">
-            <rect x="0" y="-30" width="0" height="40">
-                <animate attributeName="width" values="0; 350" begin="0.5s" dur="2s" fill="freeze" />
-            </rect>
-        </clipPath>
     </defs>
 
     <!-- BACKGROUND -->
@@ -53,90 +43,137 @@
     <!-- LEFT PANEL (ASCII Art) -->
     <g transform="translate(40, 40)">
         <rect width="420" height="530" rx="16" fill="#F8FAFC" filter="url(#glass)" stroke="rgba(15,23,42,0.08)" />
-        <!-- ASCII Text -->
-        <g transform="translate(0, 20)">
-            <text font-family="monospace" font-size="6" fill="url(#ascii-grad)" font-weight="bold" xml:space="preserve">
-                <tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.0s' dur='0.2s' fill='freeze' />:::::::::::::::::::..:.........................................................::::::::::::::::::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.04s' dur='0.2s' fill='freeze' />:::::::::::::::::::.......................................................................:..::::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.08s' dur='0.2s' fill='freeze' />:::::::::::::::::...........................-::-#%**-::--:.......................::..::::::::::::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.12s' dur='0.2s' fill='freeze' />:::.::::...............................:=%%+#%%%%%=:%*%%%%%%%##..................:........:::::::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.16s' dur='0.2s' fill='freeze' />::::::::.........................:-=%*%%%=*+*%*+*%%%@%%%%%%%%%%%%#........................::.::::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.2s' dur='0.2s' fill='freeze' />::::::........................---.##%##+==%@%%#%%%##%@%%#@%%%@%%%%%%:....................::::::::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.24s' dur='0.2s' fill='freeze' />::::::....................:%+#+:+*:-+%%%*@@@@@%%@%%%%%%%%%%%#*-+-#%=*%*.................:::::.:::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.28s' dur='0.2s' fill='freeze' />:::::::..................+:+=*-+%%@%%%%%%%%%@@@@@@%%%%%%%@%@%*++*#+=++*+.................::::::::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.32s' dur='0.2s' fill='freeze' />:::::::...............-=##+::#%%%%@%@@@@@%@@@@@@%@@@%%%%%%%@@@%%*#*%%%%%#...................:::::::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.36s' dur='0.2s' fill='freeze' />:::::::..............:**####=*%%%%@@@@@@@@@%%@@@@@@@@@@@@@@@@@@@%%%%#%-=**#.......................:::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.4s' dur='0.2s' fill='freeze' />::::::...............:***%%%%@@@@%@@@@@@@@@@@@@@@@@@@@@%@@@%%#@@@@@%##%+-:-#......................:::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.44s' dur='0.2s' fill='freeze' />:::::..................=**%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%@@@%%%%%%#+##:...................::::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.48s' dur='0.2s' fill='freeze' />:::.:.................::#*##%%%@@@@%@@@@@@@%@@@@@@@@@@@@@@#@@@@@@@@@@%%%*%%%:-.....................::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.52s' dur='0.2s' fill='freeze' />::................-:...::*=*%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@%%%#@@@%@@%%*#%=....................:::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.56s' dur='0.2s' fill='freeze' />::::...............*.::.:*=*%###%%%%%@@@@@@@@@@@%@@@@@@@@@@@@@@@@%%@@@%%%#%##*.......................::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.6s' dur='0.2s' fill='freeze' />....:..:............=-:..=##*#####%%%@@@@@@@@@@%@@@@@@@@@@@@@@@%#%@%%@%%%#%#%-=...................:::::::</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.64s' dur='0.2s' fill='freeze' />......................--:=:=*#######%%%%%@@@@@@@@%@@@@@@@@@@@@@@%%%%#%@@%%%%##.....................:::::.</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.68s' dur='0.2s' fill='freeze' />........................:::***#######%%%%%%@@@@@@@@@@@@@@%@@@@@@%%#%%%%%@%%%%#...........................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.72s' dur='0.2s' fill='freeze' />..........................+*#*****#####%%%%%%@@@@@@@@@@@@@%@@@%@@@@%%@%%%%%%%#...........................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.76s' dur='0.2s' fill='freeze' />.........................:***########%%###%%%%@@%@@@@@@@@@%%%%%%@@%%%#%%%#%%#%...........................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.8s' dur='0.2s' fill='freeze' />.........................#####%%%@%@@@%@%%####%%%@@@@@@@@%%%%%%#%%%%#%%#%##%%............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.84s' dur='0.2s' fill='freeze' />........................*%%%%#*#+*+@%%%%%%%%%#########%%%%%%%%%##%###%%%%%#%#............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.88s' dur='0.2s' fill='freeze' />.....................%==#*#%#%%@%%%%%#@@%%%%%###*###***###%#%%#########%%%##%............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.92s' dur='0.2s' fill='freeze' />....................+====*%%@#%@#%%%%%=%%@@@%%%###****+*++*%@@@%-%#***#%%%%#.............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.96s' dur='0.2s' fill='freeze' />...................%+====+*@%*%@%%%%%%%@@%%%%%######**+###%%%%%%#%####=#%%%#.............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.0s' dur='0.2s' fill='freeze' />..................=%%%%%%#*%*#%@%%%%%%%%%%%%#####*****+**####%%##%####*####=.............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.04s' dur='0.2s' fill='freeze' />...................:++====-*##%@@%%%%%%%%%######******+**#*###%%%%#####*##=..............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.08s' dur='0.2s' fill='freeze' />....................++====**###@@%%%%%%%%%######*********#*###@%%%#####@%*...............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.12s' dur='0.2s' fill='freeze' />.....................+===*######%%%%%@%%%######********##**###%%%#####+##:...............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.16s' dur='0.2s' fill='freeze' />......................+==*#######%%%%%#########*******###**##%%%#####+##*................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.2s' dur='0.2s' fill='freeze' />..........................##@%%##%###############****#%%#**#%%######+##*.................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.24s' dur='0.2s' fill='freeze' />..........................#%#%%%#####################%###*#%####**+**##-.................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.28s' dur='0.2s' fill='freeze' />.........................*%%%%%%%%%%################%#######+###*+++*#+..................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.32s' dur='0.2s' fill='freeze' />.........................#######%%%@%##########%#####%%##**+****+++**+...................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.36s' dur='0.2s' fill='freeze' />........................:-%#%%@%@@@%%%####%##%#####%%#%#********++++*:...................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.4000000000000001s' dur='0.2s' fill='freeze' />.........................-#####%%%%%%%%%%%%%%%%%%#%%%%%*#*******++++*....................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.44s' dur='0.2s' fill='freeze' />...........................############%%%%%%%%%%%%%##%%****##*+++++=....................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.48s' dur='0.2s' fill='freeze' />...........................#%%%######%%%%%%%%%%%@%%%%%%##*####**++++:....................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.52s' dur='0.2s' fill='freeze' />...........................*%%#####%%%%%%%%%%%%@@%%%%%%##*####**++++:....................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.56s' dur='0.2s' fill='freeze' />...........................#%%%%%#%%%%%%%@@@@%%@@@@%%%#*#####***+++++....................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.6s' dur='0.2s' fill='freeze' />.........................:+%%%%%%%%%%%@%@@@@@@@@@@@%%#**#####****++++....................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.6400000000000001s' dur='0.2s' fill='freeze' />.........................:-#%%%%%%@@@@@@@@@@@@@@@@####**#####****++++....................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.68s' dur='0.2s' fill='freeze' />..........................:+#%%@@@@@@@@@@@@@@%%%%%%##*#*#####****+++++...................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.72s' dur='0.2s' fill='freeze' />...........................+%%%%@%%%=%*%%%#%%%%%%%#####*#####**++*++++:..................................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.76s' dur='0.2s' fill='freeze' />.............................=*@%@%%=*%+##%%%%%%%%##########****+++++++=#*+:.............................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.8s' dur='0.2s' fill='freeze' />.................................-==*##*###%%%%%%%%%########***++++++++++%=-=-...........................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.84s' dur='0.2s' fill='freeze' />.............................=*+++++*#########%%%%%%%#######***++++++++++*=====+=........................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.8800000000000001s' dur='0.2s' fill='freeze' />.........................:++++++**++*%############%%%%######**++++++++++%===========:....................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.92s' dur='0.2s' fill='freeze' />......................+=+++*+++*+*+++*%####################*****+++++*#%====+*=========-.................</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.96s' dur='0.2s' fill='freeze' />.................++++++**+++++**+***+**%#############%#####*******+*#%+===++*-==============.............</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.0s' dur='0.2s' fill='freeze' />.............=-=+++++****+++++***+*******%%################*******#%++===+++===========+=======+.........</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.04s' dur='0.2s' fill='freeze' />.........+-=++++++++*****+++++****+********#%%############****##%*++===+=========================--=.....</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.08s' dur='0.2s' fill='freeze' />.....=-=++++++++*********+++++*******************#%%#######*+*=*=*=+==+*=-==============+====++======-=-.</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.12s' dur='0.2s' fill='freeze' />...=++++++++++*+**********+++***************************#*#*#+*++*+=+*===============+=+++++++=+=========</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.16s' dur='0.2s' fill='freeze' />.=+++++++++++*************++++******************************+**=+**++++==+++==+======+=++=+++============</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.2s' dur='0.2s' fill='freeze' />++++++++***************************************++***********+++*++++++++++++++======++++++++=+=+++=======</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.24s' dur='0.2s' fill='freeze' />+++++++*******************+********************+++********++*++++++++=+++*++++=====+++++++++=+++++++=====</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.2800000000000002s' dur='0.2s' fill='freeze' />++***++**********+********+********************++++**********+++++++++++*++++=======+++*++=+++**++++++++=</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.32s' dur='0.2s' fill='freeze' />++***++**********+*******+**********************+++++********+++++++==++***++=====++++**+==++***++++**++=</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.36s' dur='0.2s' fill='freeze' />*+****+*********+******++************************+++++*******+++++=+=++***+++======+++*++==+****++*****+=</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.4s' dur='0.2s' fill='freeze' />******+*********++*****+********************+******++++++*+****+++++++****+++===+=+=+*++===+****+******+=</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.44s' dur='0.2s' fill='freeze' />******+*********++****++*********************+******+++*+******+++++++****+++==++===++++===+**++*******+=</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.48s' dur='0.2s' fill='freeze' />****************++****++********************++*****************++=+++**+*++++++++++=+*++===++*++*******==</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.52s' dur='0.2s' fill='freeze' />****************++***+++*********++*********++*****************++=++++***++++++++=+++++===+++++*******+-=</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.56s' dur='0.2s' fill='freeze' />**************++++**+++********++++**********++****************++++++**+*++++++++++++++====++++*******==*</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.6s' dur='0.2s' fill='freeze' />***************+++*********+****+*+**********++****************++++++**+***++++++=+++++====++++******+-**</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.64s' dur='0.2s' fill='freeze' />*****#********++++****************+*+********+++**************++++++****++*+++++++++++++===++++******+***</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.68s' dur='0.2s' fill='freeze' />**************++++*************++++++********+++**************+++**+*******++++++++++++======++******=***</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.72s' dur='0.2s' fill='freeze' />****###******++++*************+*+*++++*******+++**************+++******++*+++++++++++++=++===++******=*#*</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.7600000000000002s' dur='0.2s' fill='freeze' />****#%#******++******************************+++****************+**+*++*+++**++++++++++=+++===+*****+*##*</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.8000000000000003s' dur='0.2s' fill='freeze' />#***##%*****++*******************+*++++*+****+++***********************++*+++++++++++++=+++++==*****+###*</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.84s' dur='0.2s' fill='freeze' />##**##%****++***********************+**+******++************************+**+*+++++++++==++**+===****+%%**</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.88s' dur='0.2s' fill='freeze' />*##*##%***+***************************+**+*********************************++++++++*++++==+***==+***-%#**</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.92s' dur='0.2s' fill='freeze' />*###*##*******************************************************************++*++++++*++=====*##*===*+*#**+</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.96s' dur='0.2s' fill='freeze' />*####*#**********************************+********************************+**++++++*++===+=+##**+++=%##*+</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.0s' dur='0.2s' fill='freeze' />*######*******************************************************************++**+++++++==++=++###***+=%#**+</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.04s' dur='0.2s' fill='freeze' />**####*#******************************************************************+*++++++++++=++==+*###**+%%#**+</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.08s' dur='0.2s' fill='freeze' />**######**********************************************************************++=++++==+===+**#**++%%#**=</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.12s' dur='0.2s' fill='freeze' />**####%#**********************************************************************++==+++=====++*****+*%%##++</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.16s' dur='0.2s' fill='freeze' />***###%%#**********************************************************************++=========++*****+%%#**=*</tspan>
-<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.2s' dur='0.2s' fill='freeze' />****##%%#**********************************************************************++==++=====++**+*+*@%**+*#</tspan>
+        
+        <!-- ASCII Text Container centered perfectly -->
+        <g transform="translate(0, 10)">
+            <text font-family="'Courier New', Courier, monospace" font-size="4" fill="url(#ascii-grad)" font-weight="bold" xml:space="preserve">
+                <tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.0s' dur='0.1s' fill='freeze' />:::::::::::::::::::::::::::::::...:........................................................................................:.:::::::::::::::::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.03s' dur='0.1s' fill='freeze' />:::::::::::::::::::::::::::::::..................................................................................................:::.....::.::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.06s' dur='0.1s' fill='freeze' />:::::::::::::::::::::::::::::.................................................................................................................:...::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.09s' dur='0.1s' fill='freeze' />:::::::::::::::::::::::::::...............................................:.:-==-::....:................................................:.::::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.12s' dur='0.1s' fill='freeze' />:::::::::::::::.::::::::::.........................................:#*%%*%%%#*#%##%%*-=*===##=:::...............................:::...:::..:::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.15s' dur='0.1s' fill='freeze' />::::::::::::::................................................:.+##%*=#%%%%%%#%+-:*#*#%%%%%%%%%%%##-............................::............::.:::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.18s' dur='0.1s' fill='freeze' />:::::::::::::::..........................................:*#%#%%%%@-#+#%*##+=::+%%@%%%%%#%%%%%%%%%%%++-:.....................................:...:::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.21s' dur='0.1s' fill='freeze' />:::::::::::.........................................=:*-%##=#%%%+-:***@*+-#*%*#%%@@%%@@%@%%%%%%%%%%%%%%%%:....................................::..::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.24s' dur='0.1s' fill='freeze' />:::::::::::......................................*=+::%#*%%%%##+-+*%@%%%*%+**%%%%*@@@@%%*#%%%%%%%%%%%%%%%%%=................................::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.27s' dur='0.1s' fill='freeze' />::::::::::.................................:::.%%%#+#%%=-#=*=%*=%%#%#%%%%@@@@@%#%%%%%%%#%%%@%#%#%*#*#%%#%%%%%=...........................:::::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.3s' dur='0.1s' fill='freeze' />:::::::::::..............................:#*:@**-:-*=#::=+*%#-+@#@@@@@@%%%@@@@@@@@@@#%%%@@@@%@%%%#--+=#-*#===%*%...........................:::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.32999999999999996s' dur='0.1s' fill='freeze' />::::::::::..............................-+:=*-:=:-=*+**+=#%%%%%%%%%%%@@@@@@@@@@@@%%%%%%%%%@@%@#%%-+**#%*-+#==-%**:........................::::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.36s' dur='0.1s' fill='freeze' />::::::::::.............................-#*-+--:##*+*%%%%%%%%%%%%%%@@@%%@@@@@@@@@@@@@@@@%#%%@@@@@%#%#%*=#%%#***%%#*:..................:.......:...:::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.39s' dur='0.1s' fill='freeze' />::::::::::::........................:++##:-:=-+*#%%%%@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@%%%%%@%%%%%@@@@@%%*###*%%%%%%#%*-............................::::::::::::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.42s' dur='0.1s' fill='freeze' />::::::::::::.......................=*%%%*%*#=*+**#%%%@%%%@@@@@@@@%%%%%@@@@@@@@@@@@@@#@@@@@@@%%%@@@@@@%%%%%*##*=#===%#=..................................:.::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.44999999999999996s' dur='0.1s' fill='freeze' />:::::::::::.......................-+#=*#+*#%##%%%%%%@@@@@@@@@@@@@@@@@@%%@@@@@@@@@@%@@@@@@@@%@%%%%@@@@@@%%@%%%%*=*++-+%#...................................::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.48s' dur='0.1s' fill='freeze' />::::::::::.......:....:...........:.+*#*#%%%%%@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@%@@@%%%%%%@@@@@@@%%###%=#-:--%=..................................::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.51s' dur='0.1s' fill='freeze' />:::::::::........:...................**##%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%@@%%@%#%@%%@@@@@%%%%%%%%#%*-.**+.................................::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.54s' dur='0.1s' fill='freeze' />::::::::...........................::-#*+####%@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%@@%%%##%@@@%@@%%%%#%%%*#*+*=..................................::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.57s' dur='0.1s' fill='freeze' />::::::..............................::-#**###%%%@@@@@@@%@@@@@@@@@@@@%@%%@@@@@@@@@@@@@@@@@@@%#@@@@@@@@@@@@@@@@%%%%%*%+%%#-#..................................::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.6s' dur='0.1s' fill='freeze' />::::.........................:-.....::-+****###%%%%%%%@@@@@%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@%%@@%%#@@@%%@%%%%###-###-.............................::..::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.63s' dur='0.1s' fill='freeze' />:::::.........................=.......:.*#==%#@#%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%@@@@@%@@%%%%%%:%%%:.............................:.::::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.6599999999999999s' dur='0.1s' fill='freeze' />::::::........................=::::...::**+*%%####%%%%%%%%%%@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%@@@@%%%%##%%*#%#................................:.:::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.69s' dur='0.1s' fill='freeze' />:.:::::........................-=.....::-=-%%*######%%%%%%%%@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@%%@@@@@@%%%%@%%%%%##%#%#%-+...............................::::.::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.72s' dur='0.1s' fill='freeze' />.................................=.-:..:+*-*+*#########%%@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@%%@%%%%%%%@%%#%##%#%%%=*...............................:::::::::::</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.75s' dur='0.1s' fill='freeze' />...................................=::::-=-+**##########%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@%%@%%##%@@@%%%%%%#%#--.......................:..........:::::::.</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.78s' dur='0.1s' fill='freeze' />....................................::::-::-****#########%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%@##%%@@@%%%%%%###.................................:.:::.....</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.8099999999999999s' dur='0.1s' fill='freeze' />......................................::.:.+**#*###########%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@%@%%%%#%%%@%@@%%%%%%##...................................:.......</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.84s' dur='0.1s' fill='freeze' />..........................................-****#*############%%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@%@@@@%%@@%@@#%%@@#%%@%%%%%%%##...........................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.87s' dur='0.1s' fill='freeze' />..........................................***********##########%%%%%%%%@@@%@@@@@@@@@@@@@@@@@%%%%@%%%@@@@@@%%%@%%%%%%%%%%%##...........................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.8999999999999999s' dur='0.1s' fill='freeze' />.........................................*****#*##*#########%%####%%%%%%%@%@@@@@@@@@@@@@@@@%%%#%%%%%%%%@%%%%%%%#%#%%%%%%#%#...........................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.9299999999999999s' dur='0.1s' fill='freeze' />........................................+###**#####%%%%%%%%%%%%%%####%%%%%%@@@@%@@@@@@@@@@@@%@%%%#%#%%%%#%#%%#%%%%%%%#%%%#:...........................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.96s' dur='0.1s' fill='freeze' />.......................................*%%%####%%%%%%@@@@@@@@%@@@@%%######%%%%%%@@@@@@@@@%%%%%%%%%%%#%#%#%%%%%%%%#%#%%%%#+............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.99s' dur='0.1s' fill='freeze' />.......................................#%%%%%#%%%%###%%@@%%%%%%%%%%%%%%############%%%%%%%%%%%%%%%%####%##*###%%#%%%#####+............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.02s' dur='0.1s' fill='freeze' />...................................:=+**##%%%%%%%#%%%%%%%*%%%%%%%%%%%##################%#%%#%%%%%%%###########%#%%#%#####:............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.05s' dur='0.1s' fill='freeze' />.................................**==-+#=##%%%*%@@%%%%%%%%%*%%%@@%%%%%%######*####*****####%%##%%%%#######*####%%%%%###*%.............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.08s' dur='0.1s' fill='freeze' />................................*+======*#%%%%%%%@%%%%%%%%%%+@@@@@%%%%%%%#####*********#####%%%%%%%##%####***##%#%%%%%#*..............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.1099999999999999s' dur='0.1s' fill='freeze' />...............................@++=====+**%%%#%@%%%#%%%%%%%%%+*#*+*++++++++++***######%%%%%%%@@@@%@@%###%%%#*+*#%%%%%%%*..............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.14s' dur='0.1s' fill='freeze' />...............................#+=========%%%%#@%%@%%%%%%%%%%#%@@%%%%%%%%#########***++*#*###%#%%%%%##%%%#####**##%%%%#*..............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.17s' dur='0.1s' fill='freeze' />..............................+###%%%%%%%##*%**%@%@%%%%%%%%%%#*%@%%%%%#########******++*#*##%##%#%###%%%#######+##%%%##:..............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.2s' dur='0.1s' fill='freeze' />...............................%+====---==+#**##%@@%%%%%%%%%%##%%%%%%#########*******++*#*#######%%#%##########*+#%##*-...............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.23s' dur='0.1s' fill='freeze' />...............................#+++========#*###%@@@%%%%%%%%%#%%%%%#########*********++***##*#####%%%@%%#######*+####+................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.26s' dur='0.1s' fill='freeze' />................................++=======-**####%@@%%%%%%%%%%*%%%%#########**********+*****#*#####%%%%%%%######**+%#*.................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.29s' dur='0.1s' fill='freeze' />................................#++=====-***#####%@@%%%%%%%@@#%%%%########*#*#***********##**#####%%%%%%#######+%%##..................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.3199999999999998s' dur='0.1s' fill='freeze' />.................................%++====#*########%%%%%%%%@@*%%%%#########*#***********####***####%%%%%#######*####*..................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.3499999999999999s' dur='0.1s' fill='freeze' />..................................@+===+**##########%%@%%%%%%%%############**********######***###%%%%%%######**###*:..................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.38s' dur='0.1s' fill='freeze' />...................................:+==-#############%%%%##%################*********######**####%%%#**###%#**####+...................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.41s' dur='0.1s' fill='freeze' />........................................:###%%@@@####%%#####################********###%##***#%%%####*##%##*+####+....................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.44s' dur='0.1s' fill='freeze' />.........................................**+#%%%#%%%%########################****####%#%##**##%%%######******###*.....................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.47s' dur='0.1s' fill='freeze' />.........................................*#%#%%%%%%##########################*#####%%#####**#%%######***+****###-.....................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.5s' dur='0.1s' fill='freeze' />........................................-#%%%%%%%%%%%%######################*#####%##%####*##########*++++++*##=......................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.53s' dur='0.1s' fill='freeze' />.......................................-*%#%%##%%%%%%%%%%%########################%#%#%%#####*+++*****+++++**#+.......................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.56s' dur='0.1s' fill='freeze' />.......................................:*##########%%%%%@%%#######################%#%#%###***++*******++++***+:.......................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.5899999999999999s' dur='0.1s' fill='freeze' />.......................................-=#**#%%%%%%%%%%%%%%%###########%##########%#####***+*+*******++++++**-........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.6199999999999999s' dur='0.1s' fill='freeze' />.......................................===%#%%##%%%%%%@@%%%%%%#####%#%%%%%####%#%%%###%##**+********++++++++*.........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.65s' dur='0.1s' fill='freeze' />........................................-.*#######%%%%%%%%%%%%%%%%%%%%%%%%%##%#%%%%%%%%##***********++++++++=.........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.68s' dur='0.1s' fill='freeze' />.........................................:*##################%%%#%%#%%%%%%%%%%%%%%%%%#%##******##***++++++++..........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.71s' dur='0.1s' fill='freeze' />..........................................:################%%#%%%%%%%%%%%%%%%%%@%%%%#%#%%#***####***++++++++..........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.74s' dur='0.1s' fill='freeze' />...........................................*#%%%%##########%%%%%%%%%%%%%%%%%%@%@%%%%%%%#####*####***++++++++..........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.77s' dur='0.1s' fill='freeze' />...........................................=#%%%#########%%%%%%%%%%%%%%%%%%%%%%%%%%@%%%%%#########***+++++++..........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.7999999999999998s' dur='0.1s' fill='freeze' />...........................................-#%%%########%%%%%%%%%%%%%%%%%%@@@%%@@%%%%%%###*#######**++++++++..........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.8299999999999998s' dur='0.1s' fill='freeze' />...........................................=%%%%%######%%%%%%%%%%%@%%@@@%@%@@@@%%%@%%%##*#######****++++++++..........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.8599999999999999s' dur='0.1s' fill='freeze' />..........................................=#%%%%%%%%%%%%%%%%%%%@@%@@@@@@%@@@@@@@%%%%%#***##%####*****+++++++-.........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.89s' dur='0.1s' fill='freeze' />..........................................**%%%%%%%%%%%%%%%%%@%@@@@@%@@@@@@@@@@@@%%#*#**########******+++++++.........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.92s' dur='0.1s' fill='freeze' />.........................................-+#%%%%%%%%%%%@@@@@@@@%@@@@@@@@@@@@@@@%%###############******+++++++.........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.95s' dur='0.1s' fill='freeze' />.........................................==##%%%%%%%%@@@@@@@@@@%@@@@@@@@@@@@@%%%###*****########*****+*++++++-........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.98s' dur='0.1s' fill='freeze' />.........................................::*%#%%%%@%@@@@@@@@@@@@@@@@@@@@%@%%%%%%###*****########*****+++++++++........................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.01s' dur='0.1s' fill='freeze' />..........................................:*+%%%%%%%@@@@@@@%%%%@@@%#%%%%%%%%%%%%####**#*#*######*****+*+*++++++.......................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.04s' dur='0.1s' fill='freeze' />............................................-##%%%#%@@@%#%%*#*=###%%#%%%%%%%%%%#######**########****++++*++++++:......................................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.07s' dur='0.1s' fill='freeze' />.............................................:+#%%%*%%%%%#*##%=###%%%%%%%%%%%%%################****+**+**+++++++=***+=:...............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.1s' dur='0.1s' fill='freeze' />...............................................:--=-==+=.-*%**+####%%%%%%%%%%%%%###############****+++++++++++++++##====..............................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.13s' dur='0.1s' fill='freeze' />...................................................:=+===*####*######%%%%%%%%%%%%%#############****++++++++++++++++#*=-===+-..........................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.16s' dur='0.1s' fill='freeze' />...............................................:=+*+*++++*#############%%%%%%%%%%%#############****++++++++++++++++#+======*==:.......................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.19s' dur='0.1s' fill='freeze' />............................................=*++++++*+++++*%###############%%%%%%%%%%##########****+++++++++++++++*#======++-=====....................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.2199999999999998s' dur='0.1s' fill='freeze' />.........................................+++++++++++**++++*%####################%%%%%#########****+++++++++++++++#%+======+==========.................................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.25s' dur='0.1s' fill='freeze' />.....................................=++++***+++++*+**++++**%#################################*******++++++++++*##+=======+=+===========:.............................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.28s' dur='0.1s' fill='freeze' />.................................=+==++++*+++++++**+***+++***%###############################*********++++++**##*+======+*==+==============-..........................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.31s' dur='0.1s' fill='freeze' />............................+++++++++***++++++++**************%##############################**********++++*#%%+=====++=*==+==================++:.....................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.34s' dur='0.1s' fill='freeze' />........................-+=++++++++*****++++++++****+**********#%############################*************##%+++======+*=-+=============+++========+=.................</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.37s' dur='0.1s' fill='freeze' />....................+=-===+++++++******+++++++++*****+******+*****%%########################***********##%#+=--====+=+*==================+++============-.............</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.4s' dur='0.1s' fill='freeze' />................+=-==+++++++++++*********+++++++******+*************#%%%####################******####%%+++===--=++=*+====================+=============--==:.........</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.4299999999999997s' dur='0.1s' fill='freeze' />...........:+-==+++++++++++++++**********+++++++********+***************#%%#################****##%#++===++===+++=++======================+=================--==:.....</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.46s' dur='0.1s' fill='freeze' />........:+-==++++++++++++****************++++++**********+*********************#%%%%#%%#%%##*+=++++++*****+====*===-======================+++===++++++==========--+:..</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.4899999999999998s' dur='0.1s' fill='freeze' />......+==++++++++++++++*******************+++++*****************************************************++==+**==+*=========================++=++===+++++++=============-=</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.52s' dur='0.1s' fill='freeze' />....==+++++++++++++++*+*++****************+++++**********************************************##**++=+**+=+*++=+======+===================+++=+++++++=+==+=============</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.55s' dur='0.1s' fill='freeze' />..==+++++++++++++++++*******************+++++++************************************************++***+=+*++++++=+=+=++++====+==========++++++=+++++++==================</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.58s' dur='0.1s' fill='freeze' />.=++++++++++++**************************+****++************************+++********************++**++++++++++++=++++++++++===========+++++++++++++++==+++++============</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.61s' dur='0.1s' fill='freeze' />+++++++++++++****************************+++*++************************++****++++**********+++*****+++++++++++=+++++++++++==========+++++++++++++=++++++++++==========</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.6399999999999997s' dur='0.1s' fill='freeze' />++++++++++++*******************************+*******************************++++**************+++++++++++++++++=++++*++++++===========++++++++++++=++++++++++++========</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.67s' dur='0.1s' fill='freeze' />+++++++++++++**************++***********+*++*******************************++++++*****************++++++++++++=++++++++++========+==+++++**++++=+++***++++++++++=++===</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.6999999999999997s' dur='0.1s' fill='freeze' />++++****++++***************++************++********************************+++++++**************+*+++++++++++++++*++++++++==========+++++*++++==+++****++++++++++++===</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.73s' dur='0.1s' fill='freeze' />++++*****++****************+***********++***********************************+++++++**************++++++++++===++++****+++==========++++***++====+++****+++++++***++===</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.76s' dur='0.1s' fill='freeze' />*+++*****+++**************++***********+++**********************************+++++++++***********+*++++++++++=+++++***++++=========+++++***+++===++*****++**+******++==</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.79s' dur='0.1s' fill='freeze' />+*+*******++****************++*******+++**************************************+++++++++*********+++++++++=++=+++*****+++++======+=+++++**+++====+******+++********++==</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.82s' dur='0.1s' fill='freeze' />***+******++***************++********+++******************************+********+*+++++++++**+******++++++===+++******+++++====+=++==++*+**++===+++*****+++********++==</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.85s' dur='0.1s' fill='freeze' />***********+***************++********++********************************+**********+++++*****+******+++++==+++++*****+++++====+=+=++=++*++++====+++***+++**********+===</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.88s' dur='0.1s' fill='freeze' />***********+**************++********++*++*+****************************+***********++++++**********+++++==++++*******++++===+++===+=++++++=====++***++++**********+==-</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.9099999999999997s' dur='0.1s' fill='freeze' />***********+**************+++*******++*+*****************************+++**************+************++++=+++++*******++++++=++++===+=+**+++=====+++**+++**********++=-+</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.94s' dur='0.1s' fill='freeze' />***********+**************+++******++*+*******************************+++**************************++++++++++*******+++++++++++==++=++++++=====++++*++***********+=-==</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.9699999999999998s' dur='0.1s' fill='freeze' />***********+*************++++*****+++++***********+*++****************+++**************************+++==++++++*******++++++++++==+++++++++====++++++++***********+===*</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.0s' dur='0.1s' fill='freeze' />***********+*************++++*****+++************++*++****************++++*************************+++=++++++*****++*++++++++++==+++++++++=====++++++************===**</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.03s' dur='0.1s' fill='freeze' />***********+*************++++****+******+*********+++++****************+++*************************++++++++++****+***++++++++++++++++++++======+++++++**********+-=***</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.06s' dur='0.1s' fill='freeze' />+**********+*************++++**************+*****++++*+****************++++************************+++++++++++**++++**++++++++++=+++++++++=====++++++***********+=****</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.09s' dur='0.1s' fill='freeze' />***********+************++++***********************++*++***************+++++**********************+++++++++++++*++**+*++++++++++++++++++++======+++++***********=*****</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.12s' dur='0.1s' fill='freeze' />*********#*+**********++++++**********************+**+++****************++++**********************+++++*+++***+*++++*+++++++++++++++++++++======+++++**********+-*****</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.15s' dur='0.1s' fill='freeze' />**********#************+++++**********************++**+++++*+***********+++++*********************+++++*+++********+*+++++++++++++++++++=+========+++**********++****+</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.1799999999999997s' dur='0.1s' fill='freeze' />*********##+***********+++++***********************+**+++++*************+++++**********************++++*********++*++*+++++++++++++++++++++=+=+====++**********=******</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.21s' dur='0.1s' fill='freeze' />*******####+*********++++++*********************+***+**+++++++**********+++++***********************+++****++****+++**++++++++++++++++++===++++====++**********-*###**</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.2399999999999998s' dur='0.1s' fill='freeze' />*******####+*********+++++****************************+*+++**++*********+++++************************+****++++++++++*++++++++++++++++++++==+++=+====+*********+-*###**</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.27s' dur='0.1s' fill='freeze' />*******##%%+********+++*************************++**+*++*++*++++*********++++**********************************+++++*++++++++++++++++++++=++++++=====+********++####**</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.3s' dur='0.1s' fill='freeze' />#******##%%+*******+++*******************************+++++++++++*********+++************************************+*+**++++++++++++++++++++=++++++++===+********+*###***</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.33s' dur='0.1s' fill='freeze' />*###***###%********+++********************************++*+*+++++********++****************************************+***++*+++++++++*+++++===+++++++====********=%%%#***</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.36s' dur='0.1s' fill='freeze' />*###***###%*******++************************************+***+++++*******+*+*************************************+*+**++**++++++++++*++++===++*+**++==-=*******=%%#***+</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.3899999999999997s' dur='0.1s' fill='freeze' />**###**#####*****++*****************************************++**++****************************************************++++++++++++**+++++====++****+===+*****+=%%#***+</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.42s' dur='0.1s' fill='freeze' />***###**####****************************************************+****************************************************++++++++++++++*++++==+===+*****+===+****+*%#****+</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.4499999999999997s' dur='0.1s' fill='freeze' />**#####**###*************************************************+***+***************************************************+++*+++++++++**+++====+===+*##***====+++=%##***+=</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.48s' dur='0.1s' fill='freeze' />**######*###*************************************************+*******************************************************++*+*+++++++++++++++++++==+*###**+++++++=%###**+=</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.51s' dur='0.1s' fill='freeze' />**#######*##*********************************************************************************************************+++**+++++=+++**++==++++=++**###****+++=#####**+=</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.54s' dur='0.1s' fill='freeze' />**#######**##**********************************************************************************************************+***+++++=++++++===++==++**####****++=%###***+=</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.57s' dur='0.1s' fill='freeze' />***#######*##********************************************************************************************************+*++*++++=++++++++===++===+***####***++*%%##**++=</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.5999999999999996s' dur='0.1s' fill='freeze' />****#######*#*********************************************************************************************************+++*++++++++*++++===++===+***####***++%%%##**++=</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.63s' dur='0.1s' fill='freeze' />****#########************************************************************************************************************+**++=+++++++=========+****##***+++%%%##**+==</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.6599999999999997s' dur='0.1s' fill='freeze' />****##########*************************************************************************************************************+++===+++++====++==++*********++*%%%##**+=*</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.69s' dur='0.1s' fill='freeze' />*****####%%###*************************************************************************************************************++++====+++========+++********++%%%###*+=**</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.7199999999999998s' dur='0.1s' fill='freeze' />*****#####%%%#**************************************************************************************************************+++====++=========++*********+*%%%#*#*++*#</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.75s' dur='0.1s' fill='freeze' />******###%%%%##*************************************************************************************************************+++=====+=========++********+*#%@#***++*#*</tspan>
+<tspan x='210' dy='4.0' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.78s' dur='0.1s' fill='freeze' />******####%%%%#**************************************************************************************************************++=====+========+++****+***+*%@%#***=*##*</tspan>
 
             </text>
         </g>
@@ -155,7 +192,7 @@
         <circle cx="24" cy="24" r="6" fill="#EF4444" />
         <circle cx="44" cy="24" r="6" fill="#F59E0B" />
         <circle cx="64" cy="24" r="6" fill="#10B981" />
-        <text x="330" y="28" font-family="-apple-system, system-ui, sans-serif" font-size="14" fill="#475569" text-anchor="middle" letter-spacing="1">manish@github:~</text>
+        <text x="330" y="28" font-family="-apple-system, system-ui, sans-serif" font-size="14" fill="#475569" text-anchor="middle" letter-spacing="1">Manish-Desireddi@github:~</text>
         <line x1="0" y1="48" x2="660" y2="48" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
 
         <!-- Terminal Content -->
@@ -166,38 +203,43 @@
                 <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" />
             </text>
             
-            <!-- Typing effect role -->
+            <!-- Custom Typing effect role -->
             <g transform="translate(0, 40)">
-                <text font-family="monospace" font-size="20" fill="#06B6D4" clip-path="url(#typing-clip)">> AI Engineer | Open-to-work</text>
-                <!-- Blinking cursor -->
-                <rect x="0" y="-18" width="10" height="22" fill="#06B6D4">
-                    <animate attributeName="x" values="14; 310" begin="0.5s" dur="2s" fill="freeze" />
-                    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
-                </rect>
+                <text x='0' y='0' font-family='monospace' font-size='20' fill='url(#ascii-grad)'><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='0s' dur='0.01s' fill='freeze' />&gt; </tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='0.5s' dur='0.01s' fill='freeze' />A</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='0.58s' dur='0.01s' fill='freeze' />I</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='0.6599999999999999s' dur='0.01s' fill='freeze' />&#160;</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='0.7399999999999999s' dur='0.01s' fill='freeze' />E</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='0.8199999999999998s' dur='0.01s' fill='freeze' />n</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='0.8999999999999998s' dur='0.01s' fill='freeze' />g</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='0.9799999999999998s' dur='0.01s' fill='freeze' />i</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.0599999999999998s' dur='0.01s' fill='freeze' />n</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.14s' dur='0.01s' fill='freeze' />e</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.22s' dur='0.01s' fill='freeze' />e</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.3s' dur='0.01s' fill='freeze' />r</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.3800000000000001s' dur='0.01s' fill='freeze' />&#160;</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.4600000000000002s' dur='0.01s' fill='freeze' />|</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.5400000000000003s' dur='0.01s' fill='freeze' />&#160;</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.6200000000000003s' dur='0.01s' fill='freeze' />O</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.7000000000000004s' dur='0.01s' fill='freeze' />p</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.7800000000000005s' dur='0.01s' fill='freeze' />e</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.8600000000000005s' dur='0.01s' fill='freeze' />n</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='1.9400000000000006s' dur='0.01s' fill='freeze' />-</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='2.0200000000000005s' dur='0.01s' fill='freeze' />t</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='2.1000000000000005s' dur='0.01s' fill='freeze' />o</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='2.1800000000000006s' dur='0.01s' fill='freeze' />-</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='2.2600000000000007s' dur='0.01s' fill='freeze' />w</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='2.3400000000000007s' dur='0.01s' fill='freeze' />o</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='2.420000000000001s' dur='0.01s' fill='freeze' />r</tspan><tspan opacity='0'><animate attributeName='opacity' values='0;1' begin='2.500000000000001s' dur='0.01s' fill='freeze' />k</tspan><tspan opacity='0'>_<animate attributeName='opacity' values='0;1;0' begin='2.580000000000001s' dur='1s' repeatCount='indefinite' /></tspan></text>
             </g>
 
-            <!-- Details List with Sequential Reveal -->
-            <g transform="translate(0, 95)" font-family="-apple-system, system-ui, sans-serif" font-size="16" fill="#475569">
-                <text y="0" opacity="0">📍 Location: Vijayawada, India
-                    <animate attributeName="opacity" values="0;1" begin="1s" dur="0.5s" fill="freeze" />
-                    <animate attributeName="y" values="10;0" begin="1s" dur="0.5s" fill="freeze" />
-                </text>
-                <text y="35" opacity="0">🎓 Education: B.Tech, AI&amp;DS, KL University
-                    <animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.5s" fill="freeze" />
-                    <animate attributeName="y" values="45;35" begin="1.2s" dur="0.5s" fill="freeze" />
-                </text>
-                <text y="70" opacity="0">🚀 Current Focus: Generative and Agentic AI
-                    <animate attributeName="opacity" values="0;1" begin="1.4s" dur="0.5s" fill="freeze" />
-                    <animate attributeName="y" values="80;70" begin="1.4s" dur="0.5s" fill="freeze" />
-                </text>
-                <text y="105" opacity="0">🌐 Portfolio: manish-desiredd.vercel.app
-                    <animate attributeName="opacity" values="0;1" begin="1.6s" dur="0.5s" fill="freeze" />
-                    <animate attributeName="y" values="115;105" begin="1.6s" dur="0.5s" fill="freeze" />
-                </text>
-                <text y="140" opacity="0">✉️ Email: manishdesireddi@gmail.com
-                    <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.5s" fill="freeze" />
-                    <animate attributeName="y" values="150;140" begin="1.8s" dur="0.5s" fill="freeze" />
-                </text>
+            <!-- Details List with Custom Icons (No Overlap) -->
+            <g transform="translate(0, 100)" font-family="-apple-system, system-ui, sans-serif" font-size="15" fill="#475569">
+                
+                <g opacity="0">
+                    <animate attributeName="opacity" values="0;1" begin="2.5s" dur="0.5s" fill="freeze" />
+                    <g transform="translate(0, 0)" fill="#06B6D4"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg></g>
+                    <text x="25" y="14">Location: Hyderabad, TS, India</text>
+                </g>
+                
+                <g opacity="0" transform="translate(0, 32)">
+                    <animate attributeName="opacity" values="0;1" begin="2.7s" dur="0.5s" fill="freeze" />
+                    <g transform="translate(0, 0)" fill="#06B6D4"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72l5 2.73 5-2.73v3.72z" fill="currentColor"/></svg></g>
+                    <text x="25" y="14">Education: B.Tech, AI&amp;DS, KL University</text>
+                </g>
+                
+                <g opacity="0" transform="translate(0, 64)">
+                    <animate attributeName="opacity" values="0;1" begin="2.9s" dur="0.5s" fill="freeze" />
+                    <g transform="translate(0, 0)" fill="#06B6D4"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="currentColor"/></svg></g>
+                    <text x="25" y="14">Current Focus: Generative and Agentic AI</text>
+                </g>
+                
+                <g opacity="0" transform="translate(0, 96)">
+                    <animate attributeName="opacity" values="0;1" begin="3.1s" dur="0.5s" fill="freeze" />
+                    <g transform="translate(0, 0)" fill="#06B6D4"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.34.16-2h4.68c.09.66.16 1.32.16 2 0 .68-.07 1.34-.16 2zm1.63 3.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.22 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" fill="currentColor"/></svg></g>
+                    <text x="25" y="14">Portfolio: manish-desiredd.vercel.app</text>
+                </g>
+                
+                <g opacity="0" transform="translate(0, 128)">
+                    <animate attributeName="opacity" values="0;1" begin="3.3s" dur="0.5s" fill="freeze" />
+                    <g transform="translate(0, 0)" fill="#06B6D4"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg></g>
+                    <text x="25" y="14">Email: manishdesireddi@gmail.com</text>
+                </g>
             </g>
 
             <!-- Skills Pills -->
@@ -206,120 +248,111 @@
                 <g transform="translate(0, 20)">
                     
         <g transform="translate(0, 0)">
-            <rect width="84" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+            <rect width="69.0" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
             </rect>
-            <text x="42.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Python</text>
+            <text x="34.5" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Python</text>
         </g>
         
-        <g transform="translate(94, 0)">
-            <rect width="147" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(77.0, 0)">
+            <rect width="121.5" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
             </rect>
-            <text x="73.5" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Generative AI</text>
+            <text x="60.75" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Generative AI</text>
         </g>
         
-        <g transform="translate(251, 0)">
-            <rect width="120" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(206.5, 0)">
+            <rect width="99.0" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
             </rect>
-            <text x="60.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Agentic AI</text>
+            <text x="49.5" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Agentic AI</text>
         </g>
         
-        <g transform="translate(381, 0)">
-            <rect width="93" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(313.5, 0)">
+            <rect width="76.5" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
             </rect>
-            <text x="46.5" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">FastAPI</text>
+            <text x="38.25" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">FastAPI</text>
         </g>
         
-        <g transform="translate(0, 36)">
-            <rect width="102" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(398.0, 0)">
+            <rect width="84.0" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
             </rect>
-            <text x="51.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">React.js</text>
+            <text x="42.0" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">React.js</text>
         </g>
         
-        <g transform="translate(112, 36)">
-            <rect width="84" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(490.0, 0)">
+            <rect width="69.0" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
             </rect>
-            <text x="42.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Docker</text>
+            <text x="34.5" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Docker</text>
         </g>
         
-        <g transform="translate(206, 36)">
-            <rect width="120" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(0, 32)">
+            <rect width="99.0" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
             </rect>
-            <text x="60.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Kubernetes</text>
+            <text x="49.5" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Kubernetes</text>
         </g>
         
-        <g transform="translate(336, 36)">
-            <rect width="120" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(107.0, 32)">
+            <rect width="99.0" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
             </rect>
-            <text x="60.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">PostgresDB</text>
+            <text x="49.5" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">PostgresDB</text>
         </g>
         
-        <g transform="translate(466, 36)">
-            <rect width="57" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(214.0, 32)">
+            <rect width="46.5" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
             </rect>
-            <text x="28.5" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Git</text>
+            <text x="23.25" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Git</text>
         </g>
         
-        <g transform="translate(0, 72)">
-            <rect width="75" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+        <g transform="translate(268.5, 32)">
+            <rect width="61.5" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
                 <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
             </rect>
-            <text x="37.5" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Linux</text>
+            <text x="30.75" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Linux</text>
+        </g>
+        
+        <g transform="translate(338.0, 32)">
+            <rect width="46.5" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+            </rect>
+            <text x="23.25" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">C++</text>
+        </g>
+        
+        <g transform="translate(392.5, 32)">
+            <rect width="54.0" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <text x="27.0" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Java</text>
+        </g>
+        
+        <g transform="translate(454.5, 32)">
+            <rect width="46.5" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+            </rect>
+            <text x="23.25" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">AWS</text>
+        </g>
+        
+        <g transform="translate(509.0, 32)">
+            <rect width="76.5" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+            </rect>
+            <text x="38.25" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">MongoDB</text>
+        </g>
+        
+        <g transform="translate(0, 64)">
+            <rect width="76.5" height="24" rx="12" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <text x="38.25" y="16" font-family="-apple-system, system-ui, sans-serif" font-size="11" fill="currentColor" text-anchor="middle">Jenkins</text>
         </g>
         
                 </g>
-            </g>
-
-            <!-- Social Buttons -->
-            <g transform="translate(0, 400)" font-family="-apple-system, system-ui, sans-serif" font-size="14" font-weight="600" fill="#0F172A">
-                
-                <!-- LinkedIn -->
-                <a href="https://linkedin.com/in/Manish-Desireddi" target="_blank">
-                    <g transform="translate(0, 0)" style="cursor: pointer;">
-                        <rect width="130" height="40" rx="20" fill="url(#ascii-grad)" fill-opacity="0.1" stroke="#06B6D4" stroke-width="1.5">
-                            <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" />
-                        </rect>
-                        <text x="65" y="25" text-anchor="middle">LinkedIn</text>
-                    </g>
-                </a>
-                
-                <!-- HuggingFace -->
-                <a href="https://huggingface.co/manishdesireddi" target="_blank">
-                    <g transform="translate(150, 0)" style="cursor: pointer;">
-                        <rect width="130" height="40" rx="20" fill="url(#ascii-grad)" fill-opacity="0.1" stroke="#06B6D4" stroke-width="1.5">
-                            <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite" />
-                        </rect>
-                        <text x="65" y="25" text-anchor="middle">HuggingFace</text>
-                    </g>
-                </a>
-                
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/manishdesireddi" target="_blank">
-                    <g transform="translate(300, 0)" style="cursor: pointer;">
-                        <rect width="130" height="40" rx="20" fill="url(#ascii-grad)" fill-opacity="0.1" stroke="#06B6D4" stroke-width="1.5">
-                            <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite" />
-                        </rect>
-                        <text x="65" y="25" text-anchor="middle">Instagram</text>
-                    </g>
-                </a>
-                
-                <!-- Portfolio -->
-                <a href="https://manish-desireddi.vercel.app/" target="_blank">
-                    <g transform="translate(450, 0)" style="cursor: pointer;">
-                        <rect width="130" height="40" rx="20" fill="url(#ascii-grad)" fill-opacity="0.1" stroke="#06B6D4" stroke-width="1.5">
-                            <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="4.5s" repeatCount="indefinite" />
-                        </rect>
-                        <text x="65" y="25" text-anchor="middle">Portfolio</text>
-                    </g>
-                </a>
             </g>
         </g>
     </g>
