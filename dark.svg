@@ -1,0 +1,326 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610">
+    <defs>
+        <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#030712" />
+            <stop offset="100%" stop-color="#030712" />
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.2" />
+            <stop offset="100%" stop-color="#030712" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="ascii-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7C3AED" />
+            <stop offset="50%" stop-color="#22D3EE" />
+            <stop offset="100%" stop-color="#10B981" />
+            <animate attributeName="x1" values="0%;200%;0%" dur="10s" repeatCount="indefinite" />
+            <animate attributeName="x2" values="100%;300%;100%" dur="10s" repeatCount="indefinite" />
+        </linearGradient>
+        
+        <filter id="glass" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3" />
+        </filter>
+        
+        <filter id="noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch"/>
+            <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.05 0" />
+        </filter>
+
+        <clipPath id="typing-clip">
+            <rect x="0" y="-30" width="0" height="40">
+                <animate attributeName="width" values="0; 350" begin="0.5s" dur="2s" fill="freeze" />
+            </rect>
+        </clipPath>
+    </defs>
+
+    <!-- BACKGROUND -->
+    <rect width="1180" height="610" rx="24" fill="#030712" />
+    <rect width="1180" height="610" rx="24" filter="url(#noise)" opacity="0.5" pointer-events="none" />
+    <circle cx="200" cy="300" r="400" fill="url(#glow)" pointer-events="none">
+        <animate attributeName="cx" values="200;300;200" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="cy" values="300;400;300" dur="12s" repeatCount="indefinite" />
+    </circle>
+    <!-- Border shimmer -->
+    <rect width="1180" height="610" rx="24" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <rect width="1180" height="610" rx="24" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+
+    <!-- LEFT PANEL (ASCII Art) -->
+    <g transform="translate(40, 40)">
+        <rect width="420" height="530" rx="16" fill="#0F172A" filter="url(#glass)" stroke="rgba(255,255,255,0.08)" />
+        <!-- ASCII Text -->
+        <g transform="translate(0, 20)">
+            <text font-family="monospace" font-size="6" fill="url(#ascii-grad)" font-weight="bold" xml:space="preserve">
+                <tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.0s' dur='0.2s' fill='freeze' />:::::::::::::::::::..:.........................................................::::::::::::::::::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.04s' dur='0.2s' fill='freeze' />:::::::::::::::::::.......................................................................:..::::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.08s' dur='0.2s' fill='freeze' />:::::::::::::::::...........................-::-#%**-::--:.......................::..::::::::::::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.12s' dur='0.2s' fill='freeze' />:::.::::...............................:=%%+#%%%%%=:%*%%%%%%%##..................:........:::::::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.16s' dur='0.2s' fill='freeze' />::::::::.........................:-=%*%%%=*+*%*+*%%%@%%%%%%%%%%%%#........................::.::::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.2s' dur='0.2s' fill='freeze' />::::::........................---.##%##+==%@%%#%%%##%@%%#@%%%@%%%%%%:....................::::::::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.24s' dur='0.2s' fill='freeze' />::::::....................:%+#+:+*:-+%%%*@@@@@%%@%%%%%%%%%%%#*-+-#%=*%*.................:::::.:::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.28s' dur='0.2s' fill='freeze' />:::::::..................+:+=*-+%%@%%%%%%%%%@@@@@@%%%%%%%@%@%*++*#+=++*+.................::::::::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.32s' dur='0.2s' fill='freeze' />:::::::...............-=##+::#%%%%@%@@@@@%@@@@@@%@@@%%%%%%%@@@%%*#*%%%%%#...................:::::::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.36s' dur='0.2s' fill='freeze' />:::::::..............:**####=*%%%%@@@@@@@@@%%@@@@@@@@@@@@@@@@@@@%%%%#%-=**#.......................:::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.4s' dur='0.2s' fill='freeze' />::::::...............:***%%%%@@@@%@@@@@@@@@@@@@@@@@@@@@%@@@%%#@@@@@%##%+-:-#......................:::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.44s' dur='0.2s' fill='freeze' />:::::..................=**%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%@@@%%%%%%#+##:...................::::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.48s' dur='0.2s' fill='freeze' />:::.:.................::#*##%%%@@@@%@@@@@@@%@@@@@@@@@@@@@@#@@@@@@@@@@%%%*%%%:-.....................::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.52s' dur='0.2s' fill='freeze' />::................-:...::*=*%%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@%%%#@@@%@@%%*#%=....................:::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.56s' dur='0.2s' fill='freeze' />::::...............*.::.:*=*%###%%%%%@@@@@@@@@@@%@@@@@@@@@@@@@@@@%%@@@%%%#%##*.......................::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.6s' dur='0.2s' fill='freeze' />....:..:............=-:..=##*#####%%%@@@@@@@@@@%@@@@@@@@@@@@@@@%#%@%%@%%%#%#%-=...................:::::::</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.64s' dur='0.2s' fill='freeze' />......................--:=:=*#######%%%%%@@@@@@@@%@@@@@@@@@@@@@@%%%%#%@@%%%%##.....................:::::.</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.68s' dur='0.2s' fill='freeze' />........................:::***#######%%%%%%@@@@@@@@@@@@@@%@@@@@@%%#%%%%%@%%%%#...........................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.72s' dur='0.2s' fill='freeze' />..........................+*#*****#####%%%%%%@@@@@@@@@@@@@%@@@%@@@@%%@%%%%%%%#...........................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.76s' dur='0.2s' fill='freeze' />.........................:***########%%###%%%%@@%@@@@@@@@@%%%%%%@@%%%#%%%#%%#%...........................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.8s' dur='0.2s' fill='freeze' />.........................#####%%%@%@@@%@%%####%%%@@@@@@@@%%%%%%#%%%%#%%#%##%%............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.84s' dur='0.2s' fill='freeze' />........................*%%%%#*#+*+@%%%%%%%%%#########%%%%%%%%%##%###%%%%%#%#............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.88s' dur='0.2s' fill='freeze' />.....................%==#*#%#%%@%%%%%#@@%%%%%###*###***###%#%%#########%%%##%............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.92s' dur='0.2s' fill='freeze' />....................+====*%%@#%@#%%%%%=%%@@@%%%###****+*++*%@@@%-%#***#%%%%#.............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='0.96s' dur='0.2s' fill='freeze' />...................%+====+*@%*%@%%%%%%%@@%%%%%######**+###%%%%%%#%####=#%%%#.............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.0s' dur='0.2s' fill='freeze' />..................=%%%%%%#*%*#%@%%%%%%%%%%%%#####*****+**####%%##%####*####=.............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.04s' dur='0.2s' fill='freeze' />...................:++====-*##%@@%%%%%%%%%######******+**#*###%%%%#####*##=..............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.08s' dur='0.2s' fill='freeze' />....................++====**###@@%%%%%%%%%######*********#*###@%%%#####@%*...............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.12s' dur='0.2s' fill='freeze' />.....................+===*######%%%%%@%%%######********##**###%%%#####+##:...............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.16s' dur='0.2s' fill='freeze' />......................+==*#######%%%%%#########*******###**##%%%#####+##*................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.2s' dur='0.2s' fill='freeze' />..........................##@%%##%###############****#%%#**#%%######+##*.................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.24s' dur='0.2s' fill='freeze' />..........................#%#%%%#####################%###*#%####**+**##-.................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.28s' dur='0.2s' fill='freeze' />.........................*%%%%%%%%%%################%#######+###*+++*#+..................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.32s' dur='0.2s' fill='freeze' />.........................#######%%%@%##########%#####%%##**+****+++**+...................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.36s' dur='0.2s' fill='freeze' />........................:-%#%%@%@@@%%%####%##%#####%%#%#********++++*:...................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.4000000000000001s' dur='0.2s' fill='freeze' />.........................-#####%%%%%%%%%%%%%%%%%%#%%%%%*#*******++++*....................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.44s' dur='0.2s' fill='freeze' />...........................############%%%%%%%%%%%%%##%%****##*+++++=....................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.48s' dur='0.2s' fill='freeze' />...........................#%%%######%%%%%%%%%%%@%%%%%%##*####**++++:....................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.52s' dur='0.2s' fill='freeze' />...........................*%%#####%%%%%%%%%%%%@@%%%%%%##*####**++++:....................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.56s' dur='0.2s' fill='freeze' />...........................#%%%%%#%%%%%%%@@@@%%@@@@%%%#*#####***+++++....................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.6s' dur='0.2s' fill='freeze' />.........................:+%%%%%%%%%%%@%@@@@@@@@@@@%%#**#####****++++....................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.6400000000000001s' dur='0.2s' fill='freeze' />.........................:-#%%%%%%@@@@@@@@@@@@@@@@####**#####****++++....................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.68s' dur='0.2s' fill='freeze' />..........................:+#%%@@@@@@@@@@@@@@%%%%%%##*#*#####****+++++...................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.72s' dur='0.2s' fill='freeze' />...........................+%%%%@%%%=%*%%%#%%%%%%%#####*#####**++*++++:..................................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.76s' dur='0.2s' fill='freeze' />.............................=*@%@%%=*%+##%%%%%%%%##########****+++++++=#*+:.............................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.8s' dur='0.2s' fill='freeze' />.................................-==*##*###%%%%%%%%%########***++++++++++%=-=-...........................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.84s' dur='0.2s' fill='freeze' />.............................=*+++++*#########%%%%%%%#######***++++++++++*=====+=........................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.8800000000000001s' dur='0.2s' fill='freeze' />.........................:++++++**++*%############%%%%######**++++++++++%===========:....................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.92s' dur='0.2s' fill='freeze' />......................+=+++*+++*+*+++*%####################*****+++++*#%====+*=========-.................</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='1.96s' dur='0.2s' fill='freeze' />.................++++++**+++++**+***+**%#############%#####*******+*#%+===++*-==============.............</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.0s' dur='0.2s' fill='freeze' />.............=-=+++++****+++++***+*******%%################*******#%++===+++===========+=======+.........</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.04s' dur='0.2s' fill='freeze' />.........+-=++++++++*****+++++****+********#%%############****##%*++===+=========================--=.....</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.08s' dur='0.2s' fill='freeze' />.....=-=++++++++*********+++++*******************#%%#######*+*=*=*=+==+*=-==============+====++======-=-.</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.12s' dur='0.2s' fill='freeze' />...=++++++++++*+**********+++***************************#*#*#+*++*+=+*===============+=+++++++=+=========</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.16s' dur='0.2s' fill='freeze' />.=+++++++++++*************++++******************************+**=+**++++==+++==+======+=++=+++============</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.2s' dur='0.2s' fill='freeze' />++++++++***************************************++***********+++*++++++++++++++======++++++++=+=+++=======</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.24s' dur='0.2s' fill='freeze' />+++++++*******************+********************+++********++*++++++++=+++*++++=====+++++++++=+++++++=====</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.2800000000000002s' dur='0.2s' fill='freeze' />++***++**********+********+********************++++**********+++++++++++*++++=======+++*++=+++**++++++++=</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.32s' dur='0.2s' fill='freeze' />++***++**********+*******+**********************+++++********+++++++==++***++=====++++**+==++***++++**++=</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.36s' dur='0.2s' fill='freeze' />*+****+*********+******++************************+++++*******+++++=+=++***+++======+++*++==+****++*****+=</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.4s' dur='0.2s' fill='freeze' />******+*********++*****+********************+******++++++*+****+++++++****+++===+=+=+*++===+****+******+=</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.44s' dur='0.2s' fill='freeze' />******+*********++****++*********************+******+++*+******+++++++****+++==++===++++===+**++*******+=</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.48s' dur='0.2s' fill='freeze' />****************++****++********************++*****************++=+++**+*++++++++++=+*++===++*++*******==</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.52s' dur='0.2s' fill='freeze' />****************++***+++*********++*********++*****************++=++++***++++++++=+++++===+++++*******+-=</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.56s' dur='0.2s' fill='freeze' />**************++++**+++********++++**********++****************++++++**+*++++++++++++++====++++*******==*</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.6s' dur='0.2s' fill='freeze' />***************+++*********+****+*+**********++****************++++++**+***++++++=+++++====++++******+-**</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.64s' dur='0.2s' fill='freeze' />*****#********++++****************+*+********+++**************++++++****++*+++++++++++++===++++******+***</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.68s' dur='0.2s' fill='freeze' />**************++++*************++++++********+++**************+++**+*******++++++++++++======++******=***</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.72s' dur='0.2s' fill='freeze' />****###******++++*************+*+*++++*******+++**************+++******++*+++++++++++++=++===++******=*#*</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.7600000000000002s' dur='0.2s' fill='freeze' />****#%#******++******************************+++****************+**+*++*+++**++++++++++=+++===+*****+*##*</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.8000000000000003s' dur='0.2s' fill='freeze' />#***##%*****++*******************+*++++*+****+++***********************++*+++++++++++++=+++++==*****+###*</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.84s' dur='0.2s' fill='freeze' />##**##%****++***********************+**+******++************************+**+*+++++++++==++**+===****+%%**</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.88s' dur='0.2s' fill='freeze' />*##*##%***+***************************+**+*********************************++++++++*++++==+***==+***-%#**</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.92s' dur='0.2s' fill='freeze' />*###*##*******************************************************************++*++++++*++=====*##*===*+*#**+</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='2.96s' dur='0.2s' fill='freeze' />*####*#**********************************+********************************+**++++++*++===+=+##**+++=%##*+</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.0s' dur='0.2s' fill='freeze' />*######*******************************************************************++**+++++++==++=++###***+=%#**+</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.04s' dur='0.2s' fill='freeze' />**####*#******************************************************************+*++++++++++=++==+*###**+%%#**+</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.08s' dur='0.2s' fill='freeze' />**######**********************************************************************++=++++==+===+**#**++%%#**=</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.12s' dur='0.2s' fill='freeze' />**####%#**********************************************************************++==+++=====++*****+*%%##++</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.16s' dur='0.2s' fill='freeze' />***###%%#**********************************************************************++=========++*****+%%#**=*</tspan>
+<tspan x='210' dy='6' text-anchor='middle' opacity='0'><animate attributeName='opacity' values='0;1' begin='3.2s' dur='0.2s' fill='freeze' />****##%%#**********************************************************************++==++=====++**+*+*@%**+*#</tspan>
+
+            </text>
+        </g>
+        
+        <!-- Scanline effect -->
+        <rect x="0" y="0" width="420" height="4" fill="url(#ascii-grad)" opacity="0.3">
+            <animate attributeName="y" values="0;530;0" dur="4s" repeatCount="indefinite" />
+        </rect>
+    </g>
+
+    <!-- RIGHT PANEL (Terminal / Info) -->
+    <g transform="translate(480, 40)">
+        <rect width="660" height="530" rx="16" fill="#0F172A" filter="url(#glass)" stroke="rgba(255,255,255,0.08)" />
+        
+        <!-- Terminal Header -->
+        <circle cx="24" cy="24" r="6" fill="#EF4444" />
+        <circle cx="44" cy="24" r="6" fill="#F59E0B" />
+        <circle cx="64" cy="24" r="6" fill="#10B981" />
+        <text x="330" y="28" font-family="-apple-system, system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle" letter-spacing="1">manish@github:~</text>
+        <line x1="0" y1="48" x2="660" y2="48" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+
+        <!-- Terminal Content -->
+        <g transform="translate(40, 90)">
+            <!-- Greeting -->
+            <text font-family="-apple-system, system-ui, sans-serif" font-size="34" font-weight="bold" fill="#F8FAFC">
+                Hi 👋 I'm Manish Desireddi
+                <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" />
+            </text>
+            
+            <!-- Typing effect role -->
+            <g transform="translate(0, 40)">
+                <text font-family="monospace" font-size="20" fill="#22D3EE" clip-path="url(#typing-clip)">> AI Engineer | Open-to-work</text>
+                <!-- Blinking cursor -->
+                <rect x="0" y="-18" width="10" height="22" fill="#22D3EE">
+                    <animate attributeName="x" values="14; 310" begin="0.5s" dur="2s" fill="freeze" />
+                    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+                </rect>
+            </g>
+
+            <!-- Details List with Sequential Reveal -->
+            <g transform="translate(0, 95)" font-family="-apple-system, system-ui, sans-serif" font-size="16" fill="#94A3B8">
+                <text y="0" opacity="0">📍 Location: Vijayawada, India
+                    <animate attributeName="opacity" values="0;1" begin="1s" dur="0.5s" fill="freeze" />
+                    <animate attributeName="y" values="10;0" begin="1s" dur="0.5s" fill="freeze" />
+                </text>
+                <text y="35" opacity="0">🎓 Education: B.Tech, AI&amp;DS, KL University
+                    <animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.5s" fill="freeze" />
+                    <animate attributeName="y" values="45;35" begin="1.2s" dur="0.5s" fill="freeze" />
+                </text>
+                <text y="70" opacity="0">🚀 Current Focus: Generative and Agentic AI
+                    <animate attributeName="opacity" values="0;1" begin="1.4s" dur="0.5s" fill="freeze" />
+                    <animate attributeName="y" values="80;70" begin="1.4s" dur="0.5s" fill="freeze" />
+                </text>
+                <text y="105" opacity="0">🌐 Portfolio: manish-desiredd.vercel.app
+                    <animate attributeName="opacity" values="0;1" begin="1.6s" dur="0.5s" fill="freeze" />
+                    <animate attributeName="y" values="115;105" begin="1.6s" dur="0.5s" fill="freeze" />
+                </text>
+                <text y="140" opacity="0">✉️ Email: manishdesireddi@gmail.com
+                    <animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.5s" fill="freeze" />
+                    <animate attributeName="y" values="150;140" begin="1.8s" dur="0.5s" fill="freeze" />
+                </text>
+            </g>
+
+            <!-- Skills Pills -->
+            <g transform="translate(0, 275)" color="#F8FAFC">
+                <text font-family="-apple-system, system-ui, sans-serif" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">TECHNOLOGIES</text>
+                <g transform="translate(0, 20)">
+                    
+        <g transform="translate(0, 0)">
+            <rect width="84" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+            </rect>
+            <text x="42.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Python</text>
+        </g>
+        
+        <g transform="translate(94, 0)">
+            <rect width="147" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+            </rect>
+            <text x="73.5" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Generative AI</text>
+        </g>
+        
+        <g transform="translate(251, 0)">
+            <rect width="120" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <text x="60.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Agentic AI</text>
+        </g>
+        
+        <g transform="translate(381, 0)">
+            <rect width="93" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+            </rect>
+            <text x="46.5" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">FastAPI</text>
+        </g>
+        
+        <g transform="translate(0, 36)">
+            <rect width="102" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+            </rect>
+            <text x="51.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">React.js</text>
+        </g>
+        
+        <g transform="translate(112, 36)">
+            <rect width="84" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <text x="42.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Docker</text>
+        </g>
+        
+        <g transform="translate(206, 36)">
+            <rect width="120" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+            </rect>
+            <text x="60.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Kubernetes</text>
+        </g>
+        
+        <g transform="translate(336, 36)">
+            <rect width="120" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+            </rect>
+            <text x="60.0" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">PostgresDB</text>
+        </g>
+        
+        <g transform="translate(466, 36)">
+            <rect width="57" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <text x="28.5" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Git</text>
+        </g>
+        
+        <g transform="translate(0, 72)">
+            <rect width="75" height="26" rx="13" fill="currentColor" fill-opacity="0.05" stroke="url(#ascii-grad)" stroke-width="1">
+                <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+            </rect>
+            <text x="37.5" y="17" font-family="-apple-system, system-ui, sans-serif" font-size="12" fill="currentColor" text-anchor="middle">Linux</text>
+        </g>
+        
+                </g>
+            </g>
+
+            <!-- Social Buttons -->
+            <g transform="translate(0, 400)" font-family="-apple-system, system-ui, sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">
+                
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/Manish-Desireddi" target="_blank">
+                    <g transform="translate(0, 0)" style="cursor: pointer;">
+                        <rect width="130" height="40" rx="20" fill="url(#ascii-grad)" fill-opacity="0.1" stroke="#22D3EE" stroke-width="1.5">
+                            <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" />
+                        </rect>
+                        <text x="65" y="25" text-anchor="middle">LinkedIn</text>
+                    </g>
+                </a>
+                
+                <!-- HuggingFace -->
+                <a href="https://huggingface.co/manishdesireddi" target="_blank">
+                    <g transform="translate(150, 0)" style="cursor: pointer;">
+                        <rect width="130" height="40" rx="20" fill="url(#ascii-grad)" fill-opacity="0.1" stroke="#22D3EE" stroke-width="1.5">
+                            <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite" />
+                        </rect>
+                        <text x="65" y="25" text-anchor="middle">HuggingFace</text>
+                    </g>
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/manishdesireddi" target="_blank">
+                    <g transform="translate(300, 0)" style="cursor: pointer;">
+                        <rect width="130" height="40" rx="20" fill="url(#ascii-grad)" fill-opacity="0.1" stroke="#22D3EE" stroke-width="1.5">
+                            <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite" />
+                        </rect>
+                        <text x="65" y="25" text-anchor="middle">Instagram</text>
+                    </g>
+                </a>
+                
+                <!-- Portfolio -->
+                <a href="https://manish-desireddi.vercel.app/" target="_blank">
+                    <g transform="translate(450, 0)" style="cursor: pointer;">
+                        <rect width="130" height="40" rx="20" fill="url(#ascii-grad)" fill-opacity="0.1" stroke="#22D3EE" stroke-width="1.5">
+                            <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="4.5s" repeatCount="indefinite" />
+                        </rect>
+                        <text x="65" y="25" text-anchor="middle">Portfolio</text>
+                    </g>
+                </a>
+            </g>
+        </g>
+    </g>
+</svg>
