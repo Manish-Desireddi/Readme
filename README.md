@@ -37,7 +37,23 @@
 
 ---
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./light.svg" />
+    <img src="./dark.svg" alt="Profile visual" width="100%" />
+  </picture>
+</p>
+
 ## chapter 00 · origin
+
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=06B6D4&lines=>>+sys.boot();>>+loading_origins...;>>+status:online" />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=0ea5e9&lines=>>+sys.boot();>>+loading_origins...;>>+status:online" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=06B6D4&lines=>>+sys.boot();>>+loading_origins...;>>+status:online" alt="Chapter animation" />
+  </picture>
+</p>
 
 I started by breaking things. Then I started fixing them. Somewhere in the middle, I learned to design them so they don't break.
 
@@ -58,11 +74,25 @@ I build **AI systems that survive contact with production** — fine-tuned model
 
 ## chapter 01 · what I'm shipping right now
 
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=c026d3&lines=Deploying+latest+builds...;Rerouting+compute...;All+systems+go." />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=d946ef&lines=Deploying+latest+builds...;Rerouting+compute...;All+systems+go." />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=c026d3&lines=Deploying+latest+builds...;Rerouting+compute...;All+systems+go." alt="Chapter animation" />
+  </picture>
+</p>
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### Generative 3D
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=06B6D4&lines=Training+latents...;Loss:+0.024;Checkpoints+saved." />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=0ea5e9&lines=Training+latents...;Loss:+0.024;Checkpoints+saved." />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=06B6D4&lines=Training+latents...;Loss:+0.024;Checkpoints+saved." />
+</picture>
+
 Text → ShapeNet latents.
 LoRA + QLoRA adapters on a tight VRAM budget.
 GAN geometry, FAISS retrieval for context grounding.
@@ -72,6 +102,12 @@ GAN geometry, FAISS retrieval for context grounding.
 <td width="50%" valign="top">
 
 ### Local Windows Assistant
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=c026d3&lines=Mistral-7B+loaded...;Listening...;Task+completed." />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=d946ef&lines=Mistral-7B+loaded...;Listening...;Task+completed." />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=c026d3&lines=Mistral-7B+loaded...;Listening...;Task+completed." />
+</picture>
+
 4-bit Mistral-7B-Instruct, on-device.
 Distil-Whisper voice in, RabbitMQ task dispatch out.
 Zero cloud. Zero telemetry. Zero excuses.
@@ -83,6 +119,12 @@ Zero cloud. Zero telemetry. Zero excuses.
 <td width="50%" valign="top">
 
 ### AI PC Builder
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=f59e0b&lines=RAG+fetching+prices...;Llama-3+reasoning...;Build+generated." />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=d97706&lines=RAG+fetching+prices...;Llama-3+reasoning...;Build+generated." />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=f59e0b&lines=RAG+fetching+prices...;Llama-3+reasoning...;Build+generated." />
+</picture>
+
 React + FastAPI + Llama-3 recommendation engine.
 Celery workers, Redis cache, streaming inference.
 A storefront that actually understands components.
@@ -92,6 +134,12 @@ A storefront that actually understands components.
 <td width="50%" valign="top">
 
 ### Data & Automation @ Nokia
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=22c55e&lines=Airflow+DAGs+running...;Ingesting+ESDB...;SLA:+99.99%25" />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=16a34a&lines=Airflow+DAGs+running...;Ingesting+ESDB...;SLA:+99.99%25" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&color=22c55e&lines=Airflow+DAGs+running...;Ingesting+ESDB...;SLA:+99.99%25" />
+</picture>
+
 Apache Airflow DAGs, ESDB ingestion pipelines.
 Grafana SLAs that hurt your feelings when red.
 Boring infrastructure done right.
@@ -105,32 +153,40 @@ Boring infrastructure done right.
 
 ## chapter 02 · the toolbelt
 
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=22c55e&lines=Mounting+volumes...;Loading+dependencies...;Stack+ready." />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=16a34a&lines=Mounting+volumes...;Loading+dependencies...;Stack+ready." />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=22c55e&lines=Mounting+volumes...;Loading+dependencies...;Stack+ready." alt="Chapter animation" />
+  </picture>
+</p>
+
 <table>
 <tr>
 <td valign="top" width="33%">
 
 **Models & ML**
-- PyTorch · HuggingFace
-- LoRA · QLoRA · 4-bit quant
-- Mistral · Llama-3 · Distil-Whisper
-- GANs · Diffusion · FAISS RAG
+- PyTorch · HuggingFace · LoRA
+- Mistral · Llama-3 · Whisper
+- GANs · FAISS RAG · SpaCy
+- Open Source LLMs · NLTK
 
 </td>
 <td valign="top" width="33%">
 
 **Backend & Infra**
-- FastAPI · Celery · RabbitMQ
-- Apache Airflow · ESDB
-- Redis · Docker · Grafana
-- Postgres · async Python
+- Python · C++ · C# · SQL
+- FastAPI · Flask · Django · Spring
+- Docker · K8s · Celery · RabbitMQ
+- Airflow · Redis · AWS · Azure
 
 </td>
 <td valign="top" width="33%">
 
-**Frontend & Glue**
-- React · Vite · Tailwind
-- Framer Motion · TypeScript
-- REST · WebSocket · streaming
+**Frontend & Game Dev**
+- React · Tailwind · Electron
+- Unity · Unreal Engine · WebGL
+- TypeScript · HTML5 · CSS3
 - Git · GitHub Actions · Linux
 
 </td>
@@ -144,12 +200,12 @@ Boring infrastructure done right.
 <p align="center">
   <img
     height="170"
-    src="https://github-readme-stats.vercel.app/api?username=Manish-Desireddi&show_icons=true&hide_border=true&theme=transparent&title_color=06b6d4&icon_color=7c3aed&text_color=a1a1aa&rank_icon=github"
+    src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=Manish-Desireddi&show_icons=true&hide_border=true&theme=transparent&title_color=06b6d4&icon_color=7c3aed&text_color=a1a1aa&rank_icon=github"
     alt="GitHub stats"
   />
   <img
     height="170"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Manish-Desireddi&layout=compact&hide_border=true&theme=transparent&title_color=06b6d4&text_color=a1a1aa&langs_count=8"
+    src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=Manish-Desireddi&layout=compact&hide_border=true&theme=transparent&title_color=06b6d4&text_color=a1a1aa&langs_count=8"
     alt="Top languages"
   />
 </p>
@@ -169,17 +225,17 @@ Boring infrastructure done right.
   />
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./light.svg" />
-    <img src="./dark.svg" alt="Profile visual" width="100%" />
-  </picture>
-</p>
-
 ---
 
 ## chapter 04 · how I think
+
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=f59e0b&lines=Synthesizing+logic...;Running+inference...;Output+generated." />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=d97706&lines=Synthesizing+logic...;Running+inference...;Output+generated." />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=f59e0b&lines=Synthesizing+logic...;Running+inference...;Output+generated." alt="Chapter animation" />
+  </picture>
+</p>
 
 ```text
 1. The model is a hypothesis. The pipeline around it is the proof.
@@ -193,6 +249,14 @@ Boring infrastructure done right.
 
 ## chapter 05 · beyond the terminal
 
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=7c3aed&lines=Disconnecting+session...;Exploring+analog+world...;Status:+AFK." />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=6d28d9&lines=Disconnecting+session...;Exploring+analog+world...;Status:+AFK." />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=7c3aed&lines=Disconnecting+session...;Exploring+analog+world...;Status:+AFK." alt="Chapter animation" />
+  </picture>
+</p>
+
 - **VP, Student Body — KL-SAC.** Led NAAC inspection logistics and campus-wide event ops.
 - **AI/ML research focus.** Distributed inference, local LLM deployment, multi-modal generation.
 - **Quiet hobbies.** Reading systems papers I half-understand, then re-reading them until I do.
@@ -200,6 +264,14 @@ Boring infrastructure done right.
 ---
 
 ## chapter 06 · let's talk
+
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=10b981&lines=Opening+comms+channel...;Awaiting+transmission...;Ping+me." />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=059669&lines=Opening+comms+channel...;Awaiting+transmission...;Ping+me." />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&color=10b981&lines=Opening+comms+channel...;Awaiting+transmission...;Ping+me." alt="Chapter animation" />
+  </picture>
+</p>
 
 <p align="left">
   <a href="mailto:manishdesireddi@gmail.com"><img src="https://img.shields.io/badge/email-manishdesireddi%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=09090b" alt="Email" /></a>
